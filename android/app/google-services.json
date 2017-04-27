@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "723043561637",
+    "firebase_url": "https://testballzy.firebaseio.com",
+    "project_id": "testballzy",
+    "storage_bucket": "testballzy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723043561637:android:60e30ea8fac76e36",
+        "android_client_info": {
+          "package_name": "com.ballzyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723043561637-t3tg9fl15qbtf53ithi3vrktg0sk7hn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3mAijmcJamuInn_lUk0vWxZhx7bHVjy0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
