@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Button,
+  Image,
   View,
   Text,
   Alert,
@@ -12,6 +13,14 @@ import {
 import Camera from 'react-native-camera';
 
 class Videos extends React.Component {
+  static navigationOptions = {
+    tabBarIcon: () => (
+      <Image
+        source={require('../navigationbar/video48x48.png')}
+        style = {{width: 32, height: 32}}
+      />
+    ),
+  };
   render(){
     return(
       <View style={styles.container}>

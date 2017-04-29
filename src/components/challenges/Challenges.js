@@ -1,13 +1,13 @@
 import React from 'react';
 import NavigationBar from '../navigationbar/NavigationBar';
 import * as firebase from 'firebase';
-import Backend from '../chat/Backend';
-
+import firebaseApp from '../../globals'
 
 import {
     View,
     Text,
     StyleSheet,
+    Image,
     TextInput,
     listView,
     TouchableHighlight,
@@ -23,6 +23,15 @@ import {
 import Firebase from 'firebase';
 
 class Challenges extends React.Component {
+  static navigationOptions = {
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    tabBarIcon: () => (
+      <Image
+        source={require('../navigationbar/hometent48x48.png')}
+        style = {{width: 32, height: 32}}
+      />
+    ),
+  };
   state = {
     search: '',
   };
@@ -227,7 +236,6 @@ class Challenges extends React.Component {
         </View>
 
         </View>
-        <NavigationBar/>
       </View>
     );
   }

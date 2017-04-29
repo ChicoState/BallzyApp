@@ -14,6 +14,14 @@ import {
 
 
 class Users extends React.Component {
+  static navigationOptions = {
+    tabBarIcon: () => (
+      <Image
+        source={require('../navigationbar/users48x48.png')}
+        style = {{width: 32, height: 32}}
+      />
+    ),
+  };
   render() {
     return(
       <View style={{flex:10}}>
@@ -56,7 +64,6 @@ class Users extends React.Component {
             </ScrollableTabView>
           </View>
         </View>
-        <NavigationBar/>
       </View>
     );
   }
