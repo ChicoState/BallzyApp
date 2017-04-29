@@ -19,8 +19,7 @@ import {
 } from 'react-native-router-flux';
 
 import {
-  Platform,
-  Image,
+  Platform
 } from 'react-native';
 
 
@@ -41,7 +40,7 @@ const MainApp = TabNavigator (
 
 const App = StackNavigator ({
   Login: { screen: Login },
-  Singup: { screen: Signup },
+  Signup: { screen: Signup },
   Mainapp: { screen: MainApp }
 });
 
