@@ -5,9 +5,9 @@ import New from './components/challenges/New';
 import Payments from './components/payments/Payments';
 import Videos from './components/videos/Videos';
 import Users from './components/users/Users';
-import Login from './components/rootlogin/Login'
-
-import Signup from './components/rootlogin/Signup'
+import Login from './components/rootlogin/Login';
+import Chat from './components/chat/Chat';
+import Signup from './components/rootlogin/Signup';
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
@@ -26,8 +26,9 @@ import {
 const MainApp = TabNavigator (
   {
     Challenges: { screen: Challenges },
-    Payments: { screen: Payments },
+    Chat: { screen: Chat },
     Videos: { screen: Videos },
+    Payments: { screen: Payments },
     Users: { screen: Users },
   },
   {

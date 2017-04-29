@@ -4,6 +4,7 @@ import {
   Text,
   View,
   StyleSheet,
+  Image,
   TextInput,
   TouchableOpacity
 } from 'react-native';
@@ -16,6 +17,15 @@ import{
 
 
 class Chat extends React.Component {
+  static navigationOptions = {
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    tabBarIcon: () => (
+      <Image
+        source={require('../navigationbar/conversations48x48.png')}
+        style = {{width: 32, height: 32}}
+      />
+    ),
+  };
   /*constructor(props) {
     super(props);
     this.state = {
@@ -60,7 +70,6 @@ class Chat extends React.Component {
             </Text>
           </TouchableOpacity>
         </View>
-        <NavigationBar/>
       </View>
     );
   }
