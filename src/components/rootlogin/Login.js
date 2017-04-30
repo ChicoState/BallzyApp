@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 
 import React, {Component} from 'react';
-import styles from './mainstyle.js';
+import styles from '../../styles/LoginStyles';
 import firebaseApp from '../../globals'
 
 export default class Login extends Component {

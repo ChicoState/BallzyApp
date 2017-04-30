@@ -35,14 +35,31 @@ const MainApp = TabNavigator (
     tabBarOptions: {
       showIcon: true,
       showLabel: false,
-  },
-  tabBarPosition: 'bottom',
-})
+      style: {
+        backgroundColor: '#333333',
+      },
+      indicatorStyle: {
+        backgroundColor: '#E54747'
+      },
+    },
+    tabBarPosition: 'bottom',
+    navigationOptions: {
+      headerLeft: null,
+      headerStyle: {
+        backgroundColor: '#333333',
+      },
+      headerTitleStyle: {
+        color: '#EFEFEF',
+      }
+    },
+  }
+)
 
 const App = StackNavigator ({
-  Login: { screen: Login },
-  Signup: { screen: Signup },
+//  Login: { screen: Login },
+//  Signup: { screen: Signup },
   Mainapp: { screen: MainApp }
-});
+}
+);
 
 export default App;

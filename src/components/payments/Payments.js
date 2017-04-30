@@ -1,5 +1,4 @@
 import React from 'react';
-import NavigationBar from '../navigationbar/NavigationBar';
 import {
   Text,
   StyleSheet,
@@ -12,25 +11,30 @@ import {
   Actions
 } from 'react-native-router-flux';
 
+import PaymentsStyles from '../../styles/PaymentsStyles'
+
 class Payments extends React.Component {
+
   static navigationOptions = {
+    title: 'Payments',
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    headerLeft: null,
     tabBarIcon: () => (
       <Image
-        source={require('../navigationbar/payments48x48.png')}
+        source={require('../../img/payments48x48.png')}
         style = {{width: 32, height: 32}}
       />
     ),
   };
   render() {
     return(
-      <View style={styles.container}>
+      <View style={PaymentsStyles.container}>
         <View style={{flex: 10}}>
-          <Text style={styles.title}>Payments</Text>
-	        <Button title="Pay with Card" style={styles.button1}
+          <Text style={PaymentsStyles.title}>Payments</Text>
+	        <Button title="Pay with Card" style={PaymentsStyles.button1}
 	           onPress={() => { Actions.cardPayments() }}>
 	        </Button>
-	        <Button title="Pay with Stripe" style={styles.button2}
+	        <Button title="Pay with Stripe" style={PaymentsStyles.button2}
 	           onPress={() => { Actions.stripePayments() }}>
 	        </Button>
 	     </View>
@@ -39,27 +43,5 @@ class Payments extends React.Component {
   }
 }
 
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'stretch',
-    backgroundColor: '#00BFFF'
-  },
-  button1: {
-    marginTop: 20,
-    marginLeft: 20,
-    fontSize: 20,
-  },
-  button2: {
-    marginTop: 40,
-    marginLeft: 20,
-    fontSize: 20,
-  },
-  title: {
-    textAlign: 'center',
-    fontSize: 40,
-    fontWeight: 'bold',
-  },
-});
+
 export default Payments;

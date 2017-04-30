@@ -1,8 +1,8 @@
 import React from 'react';
-import NavigationBar from '../navigationbar/NavigationBar';
 import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
 import Posts from './Posts';
 import UserChallenges from './UserChallenges';
+
 import {
   Text,
   View,
@@ -12,12 +12,14 @@ import {
   Button,
 } from 'react-native';
 
+import UsersStyles from '../../styles/UsersStyles'
 
 class Users extends React.Component {
   static navigationOptions = {
+    title: 'Users',
     tabBarIcon: () => (
       <Image
-        source={require('../navigationbar/users48x48.png')}
+        source={require('../../img/users48x48.png')}
         style = {{width: 32, height: 32}}
       />
     ),
@@ -26,13 +28,13 @@ class Users extends React.Component {
     return(
       <View style={{flex:10}}>
         <View style={{flex: 10}}>
-          <View style={styles.UserInfo}>
+          <View style={UsersStyles.UserInfo}>
             <View style={{flex: 3}}>
             </View>
-            <View style={styles.profileArea}>
+            <View style={UsersStyles.profileArea}>
               <View style={{flex: 7}}>
                 <Image
-                  style={styles.image}
+                  style={UsersStyles.image}
                   source={require('./profile.png')}
                 />
               </View>
@@ -48,10 +50,10 @@ class Users extends React.Component {
             <View style={{flex: 3}}>
             </View>
           </View>
-          <View style={styles.Content}>
+          <View style={UsersStyles.Content}>
             <ScrollableTabView
               renderTabBar={() => <DefaultTabBar />}
-              tabBarBackgroundColor= 'black'
+              tabBarBackgroundColor= '#E54747'
               tabBarInactiveTextColor = 'white'
               tabBarActiveTextColor = 'white'
               tabBarUnderlineStyle = {{
@@ -70,49 +72,3 @@ class Users extends React.Component {
 }
 
 export default Users;
-
-var styles = StyleSheet.create({
-  UserInfo: {
-    flex: 3.5,
-    backgroundColor: '#00BFFF',
-    flexDirection: 'row'
-  },
-
-  NavigationButton: {
-    backgroundColor: '#121212',
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  Tabs: {
-    flex: 1,
-    flexDirection: "row",
-  },
-
-  Content: {
-    flex: 6.5,
-    backgroundColor: 'white',
-  },
-
-  profileArea: {
-    flex: 4,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  followButton: {
-    opacity: 1,
-    backgroundColor: '#121212',
-    flex: 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  image: {
-    flex: 1,
-    width: 100,
-    height: 100,
-    resizeMode: 'contain',
-  }
-})

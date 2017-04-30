@@ -11,26 +11,28 @@ import {
 } from 'react-native';
 
 import Camera from 'react-native-camera';
+import VideoStyles from '../../styles/VideoStyles';
 
 class Videos extends React.Component {
   static navigationOptions = {
+    title: 'Videos',
     tabBarIcon: () => (
       <Image
-        source={require('../navigationbar/video48x48.png')}
+        source={require('../../img/video48x48.png')}
         style = {{width: 32, height: 32}}
       />
     ),
   };
   render(){
     return(
-      <View style={styles.container}>
+      <View style={VideoStyles.container}>
         <Camera
           ref={(cam) => {
             this.camera = cam;
           }}
-          style={styles.preview}
+          style={VideoStyles.preview}
           aspect={Camera.constants.Aspect.fill}>
-          <Text style={styles.capture} onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>
+          <Text style={VideoStyles.capture} onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>
         </Camera>
       </View>
     );
@@ -45,23 +47,4 @@ class Videos extends React.Component {
   }
 }
 
-  const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  preview: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    alignItems: 'center'
-  },
-  capture: {
-    flex: 0,
-    backgroundColor: '#fff',
-    borderRadius: 5,
-    color: '#000',
-    padding: 10,
-    margin: 40
-  }
-  });
 export default Videos;

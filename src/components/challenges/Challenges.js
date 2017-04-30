@@ -1,7 +1,7 @@
 import React from 'react';
-import NavigationBar from '../navigationbar/NavigationBar';
 import * as firebase from 'firebase';
 import firebaseApp from '../../globals'
+import ChallengesStyles from '../../styles/ChallengesStyles'
 
 import {
     View,
@@ -25,9 +25,10 @@ import Firebase from 'firebase';
 class Challenges extends React.Component {
   static navigationOptions = {
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    title: 'Challenges',
     tabBarIcon: () => (
       <Image
-        source={require('../navigationbar/hometent48x48.png')}
+        source={require('../../img/hometent48x48.png')}
         style = {{width: 32, height: 32}}
       />
     ),
@@ -38,19 +39,15 @@ class Challenges extends React.Component {
 
 /*  constructor(props) {
     super(props);
-
     const config = {
       apiKey: 'AIzaSyB3mAijmcJamuInn_lUk0vWxZhx7bHVjy0',
       authDomain: 'testballzy.firebaseapp.com',
       databaseURL: 'https://testballzy.firebaseio.com',
       storageBucket: 'testballzy.appspot.com'
     }
-
     //const firebaseApp = firebase.initializeApp(config);
     //const myFirebaseRef = firebaseApp.database().ref('list');
-
     //this.itemsRef = myFirebaseRef.child('Challenges');
-
     this.state = {
       newChallenge: '',
       email: '',
@@ -61,15 +58,12 @@ class Challenges extends React.Component {
       chalArr: [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],
       //todoSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row !=row2})
     };
-
     this.items = [];
     this.tempChallArray = [];
-
     //const ds = new ListView.DataSource({rowHasChanged:(r1,r2) => r1 !== r2});
     //this.state = {
       //dataSource: ds.cloneWithRows(['row 1', 'row 2']),
     //};
-
   }
 */
 /*
@@ -80,7 +74,6 @@ class Challenges extends React.Component {
       //  todoSource: this.state.todoSource.cloneWithRows(this.items)
       //})
     });
-
     this.itemsRef.on("value", (allChallSnapshot) => {
       allChallSnapshot.forEach((challengeSnapshot) => {
         var chall = challengeSnapshot.val();
@@ -90,7 +83,6 @@ class Challenges extends React.Component {
         chalArr: this.tempChallArray
       });
     });
-
     this.itemsRef.on('child_removed', (dataSnapshot) => {
       this.items = this.items.filter((x) => x.id !== dataSnapshot.key);
       //this.setState({
@@ -98,7 +90,6 @@ class Challenges extends React.Component {
     //  })
     });
   }
-
   addChallenge() {
     if (this.state.title !== '' && this.state.description !== '') {
       this.itemsRef.push({
@@ -113,7 +104,6 @@ class Challenges extends React.Component {
       });
     }
   }
-
   removeTodo(rowData) {
     this.itemsRef.child(rowData.id).remove();
   }
@@ -124,8 +114,8 @@ class Challenges extends React.Component {
       <TouchableHighlight
         //onPress={() => this.removeTodo(rowData)}>
         <View>
-          <View style={styles.row}>
-            <Text style={styles.todoText}>{rowData.text}</Text>
+          <View style={ChallengesStyles.row}>
+            <Text style={ChallengesStyles.todoText}>{rowData.text}</Text>
           </View>
         </View>
       </TouchableHighlight>
@@ -149,10 +139,10 @@ class Challenges extends React.Component {
 */
   render() {
     return (
-      <View style={styles.container}>
+      <View style={ChallengesStyles.container}>
         <View style={{flex:10}}>
           <TextInput
-            style={styles.titleInput}
+            style={ChallengesStyles.titleInput}
             placeholder='Search'
             onChangeText={(text) => {
                 this.setState({
@@ -167,9 +157,9 @@ class Challenges extends React.Component {
 
           </View>
 
-          <View style={styles.inputView}>
+          <View style={ChallengesStyles.inputView}>
           <TextInput
-            style={styles.titleInput}
+            style={ChallengesStyles.titleInput}
             placeholder='Title'
             onChangeText={(text) => {
                 this.setState({
@@ -179,7 +169,7 @@ class Challenges extends React.Component {
               value={this.state.title}
           />
           <TextInput
-            style={styles.titleInput}
+            style={ChallengesStyles.titleInput}
             placeholder='Description'
             onChangeText={(text) => {
                 this.setState({
@@ -189,7 +179,7 @@ class Challenges extends React.Component {
               value={this.state.description}
           />
           <TextInput
-            style={styles.titleInput}
+            style={ChallengesStyles.titleInput}
             placeholder='Price'
             onChangeText={(text) => {
                 this.setState({
@@ -201,7 +191,7 @@ class Challenges extends React.Component {
 
           <TouchableHighlight
             onPress={() => this.addChallenge()}>
-            <Text style={styles.buttonText}>
+            <Text style={ChallengesStyles.buttonText}>
               Create
             </Text>
           </TouchableHighlight>
@@ -209,27 +199,27 @@ class Challenges extends React.Component {
 
           <View style={{flex:0.5, flexDirection: 'row', justifyContent: 'space-between'}}>
           <TouchableOpacity
-            style={styles.button}
+            style={ChallengesStyles.button}
             onPress={() => {
               Actions.new({
                 search: this.state.search,
               });
             }}
           >
-          <Text style={styles.buttonText}>
+          <Text style={ChallengesStyles.buttonText}>
             Search
           </Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={styles.button}
+          style={ChallengesStyles.button}
           onPress={() => {
             Actions.new({
               search: this.state.search,
             });
           }}
         >
-          <Text style={styles.buttonText}>
+          <Text style={ChallengesStyles.buttonText}>
             Create
           </Text>
         </TouchableOpacity>
@@ -248,57 +238,6 @@ Challenges.propTypes = {
   price: React.PropTypes.string,
 };
 
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#00BFFF'
-  },
-  inputView: {
-    paddingTop: 20,
-  },
-  input: {
-    height: 36,
-    padding: 4,
-    marginRight: 5,
-    flex: 4,
-    fontSize: 18,
-    borderWidth: 1,
-    borderColor: '#48afdb',
-    borderRadius: 4,
-    color: '#48BBEC'
-  },
-  title: {
-    marginTop: 10,
-    marginLeft: 20,
-    fontSize: 20,
-  },
-  titleInput: {
-    padding: 5,
-    height: 40,
-    borderWidth: 2,
-    borderColor: 'black',
-    margin: 10,
-    backgroundColor: 'white'
-  },
 
-  buttonText: {
-    alignSelf: 'center',
-    textAlign: 'center',
-    padding: 5,
-    fontSize: 20,
-    color: '#FFFFFF'
-  },
-
-  button: {
-    alignSelf: 'center',
-    borderWidth: 1,
-    borderRadius: 5,
-    height: 40,
-    width: 90,
-    borderColor: '#7F8284',
-    backgroundColor: '#AEB3B7',
-    borderRadius: 10,
-  }
-});
 
 export default Challenges;
