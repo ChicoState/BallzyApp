@@ -14,10 +14,6 @@ class Settings extends React.Component {
     return(
       <View>
         <Text>Hello from settings</Text>
-        <Button
-          onPress={() => this.props.navigation.goBack()}
-          title= "Go back to tabbed"
-        />
       </View>
     );
   }

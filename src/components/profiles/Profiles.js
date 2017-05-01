@@ -14,9 +14,9 @@ import {
 
 import UsersStyles from '../../styles/UsersStyles'
 
-class Users extends React.Component {
+class Profile extends React.Component {
   static navigationOptions = {
-    title: 'Users',
+    title: 'Profile',
     tabBarIcon: () => (
       <Image
         source={require('../../img/users48x48.png')}
@@ -71,4 +71,4 @@ class Users extends React.Component {
   }
 }
 
-export default Users;
+export default Profile;

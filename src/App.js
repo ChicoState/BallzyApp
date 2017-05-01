@@ -4,7 +4,7 @@ import Challenges from './components/challenges/Challenges';
 import New from './components/challenges/New';
 import Payments from './components/payments/Payments';
 import Videos from './components/videos/Videos';
-import Users from './components/users/Users';
+import Profile from './components/profiles/Profiles';
 import Login from './components/rootlogin/Login';
 import Chat from './components/chat/Chat';
 import Signup from './components/rootlogin/Signup';
@@ -20,13 +20,13 @@ import {
 } from 'react-native';
 
 
-const TabbedArea = TabNavigator (
+const MainApp = TabNavigator (
   {
     Challenges: { screen: Challenges },
     Chat: { screen: Chat },
     Videos: { screen: Videos },
     Payments: { screen: Payments },
-    Users: { screen: Users },
+    Profile: { screen: Profile },
   },
   {
     tabBarOptions: {
@@ -47,7 +47,7 @@ const TabbedArea = TabNavigator (
           <View style={{alignItems:'center', justifyContent: 'center'}}>
             <Image
               source={require('./img/cog.png')}
-              style = {{width: 32, height: 32}}
+              style = {{width: 28, height: 28}}
             />
           </View>
         </TouchableOpacity>,
@@ -62,16 +62,11 @@ const TabbedArea = TabNavigator (
   }
 )
 
-
-const MainApp = DrawerNavigator ({
-  TabbedArea: { screen: TabbedArea },
-  Settings: { screen: Settings },
-});
-
 const App = StackNavigator ({
 //  Login: { screen: Login },
 //  Signup: { screen: Signup },
-  Mainapp: { screen: MainApp }
+  Mainapp: { screen: MainApp },
+  Settings: { screen: Settings }
 });
 
 export default App;
