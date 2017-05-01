@@ -26,10 +26,67 @@ uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:7:5-77
 MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:11:5-78
 MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:7:22-75
 uses-sdk
 ADDED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:9:5-11:41
+MERGED from [BallzyApp:react-native-linear-gradient:unspecified] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-linear-gradient/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:2:3-70
+MERGED from [BallzyApp:react-native-spinkit:unspecified] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-spinkit/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:0.11.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:2:3-70
+MERGED from [com.github.ybq:Android-SpinKit:1.1.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/AndroidManifest.xml:6:5-8:41
 MERGED from [BallzyApp:react-native-camera:unspecified] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-camera/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
@@ -146,6 +203,29 @@ MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/Ball
 MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.soloader:soloader:0.1.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:3:3-17
 MERGED from [org.webkit:android-jsc:r174650] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/AndroidManifest.xml:2:3-17
+MERGED from [BallzyApp:react-native-spinkit:unspecified] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-spinkit/unspecified/AndroidManifest.xml:11:5-15:19
+MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/AndroidManifest.xml:2:3-17
+MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/AndroidManifest.xml:2:3-17
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.react:react-native:0.41.2] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/AndroidManifest.xml:13:5-20
@@ -201,6 +281,8 @@ MERGED from [com.google.android.gms:play-services-basement:9.0.0] /home/etapia8/
 MERGED from [com.android.support:support-v4:23.4.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:16:7-39
+	android:supportsRtl
+		ADDED from [BallzyApp:react-native-spinkit:unspecified] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-spinkit/unspecified/AndroidManifest.xml:14:9-35
 	android:allowBackup
 		ADDED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:15:7-33
 	android:icon
@@ -231,6 +313,12 @@ activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:28:7-84
 	android:name
 		ADDED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:28:17-81
+android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:1:1-31:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+android:uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:1:1-31:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:1:1-31:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
 uses-permission#android.permission.CAMERA
 ADDED from [BallzyApp:react-native-camera:unspecified] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-camera/unspecified/AndroidManifest.xml:11:5-65
 	android:name
@@ -247,12 +335,6 @@ ADDED from [BallzyApp:react-native-camera:unspecified] /home/etapia8/Documents/B
 		ADDED from [BallzyApp:react-native-camera:unspecified] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-camera/unspecified/AndroidManifest.xml:18:9-33
 	android:name
 		ADDED from [BallzyApp:react-native-camera:unspecified] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-camera/unspecified/AndroidManifest.xml:17:9-57
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:1:1-31:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:1:1-31:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/etapia8/Documents/BallzyApp/android/app/src/main/AndroidManifest.xml:1:1-31:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:9.0.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] /home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/AndroidManifest.xml:22:5-79

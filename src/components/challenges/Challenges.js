@@ -1,7 +1,7 @@
 import React from 'react';
 import * as firebase from 'firebase';
-import firebaseApp from '../../globals'
-import ChallengesStyles from '../../styles/ChallengesStyles'
+import firebaseApp from '../../globals';
+import ChallengesStyles from '../../styles/ChallengesStyles';
 
 import {
     View,
@@ -24,13 +24,15 @@ import Firebase from 'firebase';
 
 class Challenges extends React.Component {
   static navigationOptions = {
-    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
     title: 'Challenges',
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+
     tabBarIcon: () => (
       <Image
         source={require('../../img/hometent48x48.png')}
         style = {{width: 32, height: 32}}
       />
+
     ),
   };
   state = {
@@ -39,15 +41,19 @@ class Challenges extends React.Component {
 
 /*  constructor(props) {
     super(props);
+
     const config = {
       apiKey: 'AIzaSyB3mAijmcJamuInn_lUk0vWxZhx7bHVjy0',
       authDomain: 'testballzy.firebaseapp.com',
       databaseURL: 'https://testballzy.firebaseio.com',
       storageBucket: 'testballzy.appspot.com'
     }
+
     //const firebaseApp = firebase.initializeApp(config);
     //const myFirebaseRef = firebaseApp.database().ref('list');
+
     //this.itemsRef = myFirebaseRef.child('Challenges');
+
     this.state = {
       newChallenge: '',
       email: '',
@@ -58,12 +64,15 @@ class Challenges extends React.Component {
       chalArr: [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],
       //todoSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row !=row2})
     };
+
     this.items = [];
     this.tempChallArray = [];
+
     //const ds = new ListView.DataSource({rowHasChanged:(r1,r2) => r1 !== r2});
     //this.state = {
       //dataSource: ds.cloneWithRows(['row 1', 'row 2']),
     //};
+
   }
 */
 /*
@@ -74,6 +83,7 @@ class Challenges extends React.Component {
       //  todoSource: this.state.todoSource.cloneWithRows(this.items)
       //})
     });
+
     this.itemsRef.on("value", (allChallSnapshot) => {
       allChallSnapshot.forEach((challengeSnapshot) => {
         var chall = challengeSnapshot.val();
@@ -83,6 +93,7 @@ class Challenges extends React.Component {
         chalArr: this.tempChallArray
       });
     });
+
     this.itemsRef.on('child_removed', (dataSnapshot) => {
       this.items = this.items.filter((x) => x.id !== dataSnapshot.key);
       //this.setState({
@@ -90,6 +101,7 @@ class Challenges extends React.Component {
     //  })
     });
   }
+
   addChallenge() {
     if (this.state.title !== '' && this.state.description !== '') {
       this.itemsRef.push({
@@ -104,6 +116,7 @@ class Challenges extends React.Component {
       });
     }
   }
+
   removeTodo(rowData) {
     this.itemsRef.child(rowData.id).remove();
   }

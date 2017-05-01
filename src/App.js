@@ -8,22 +8,19 @@ import Users from './components/users/Users';
 import Login from './components/rootlogin/Login';
 import Chat from './components/chat/Chat';
 import Signup from './components/rootlogin/Signup';
+import Settings from './components/settings/Settings';
 
-import { StackNavigator, TabNavigator } from 'react-navigation';
 
-import { TabViewAnimated, TabBar } from 'react-native-tab-view';
-
-import {
-    Router,
-    Scene,
-} from 'react-native-router-flux';
+import { StackNavigator, TabNavigator, DrawerNavigator } from 'react-navigation';
+import { TabViewAnimated, TabBar} from 'react-native-tab-view';
+import { View, Image, TouchableOpacity, Button } from 'react-native';
 
 import {
   Platform
 } from 'react-native';
 
 
-const MainApp = TabNavigator (
+const TabbedArea = TabNavigator (
   {
     Challenges: { screen: Challenges },
     Chat: { screen: Chat },
@@ -43,23 +40,38 @@ const MainApp = TabNavigator (
       },
     },
     tabBarPosition: 'bottom',
-    navigationOptions: {
+    navigationOptions:({navigation}) => ({
       headerLeft: null,
+      headerRight:
+        <TouchableOpacity style={{width: 45}} onPress = {() => navigation.navigate('Settings')}>
+          <View style={{alignItems:'center', justifyContent: 'center'}}>
+            <Image
+              source={require('./img/cog.png')}
+              style = {{width: 32, height: 32}}
+            />
+          </View>
+        </TouchableOpacity>,
       headerStyle: {
         backgroundColor: '#333333',
+        flexDirection: 'row',
       },
       headerTitleStyle: {
         color: '#EFEFEF',
       }
-    },
+    }),
   }
 )
+
+
+const MainApp = DrawerNavigator ({
+  TabbedArea: { screen: TabbedArea },
+  Settings: { screen: Settings },
+});
 
 const App = StackNavigator ({
 //  Login: { screen: Login },
 //  Signup: { screen: Signup },
   Mainapp: { screen: MainApp }
-}
-);
+});
 
 export default App;
