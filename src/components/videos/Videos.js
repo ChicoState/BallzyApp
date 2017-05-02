@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import NavigationBar from '../videos/navBar';
+
 import {
   StyleSheet,
   Button,
-  Image,
   View,
   Text,
   Alert,
   Navigator,
+  Image,
   TouchableHighlight
 } from 'react-native';
 
@@ -14,6 +16,7 @@ import Camera from 'react-native-camera';
 
 class Videos extends React.Component {
   static navigationOptions = {
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
     tabBarIcon: () => (
       <Image
         source={require('../navigationbar/video48x48.png')}
@@ -21,47 +24,46 @@ class Videos extends React.Component {
       />
     ),
   };
-  render(){
-    return(
-      <View style={styles.container}>
-        <Camera
-          ref={(cam) => {
-            this.camera = cam;
-          }}
-          style={styles.preview}
-          aspect={Camera.constants.Aspect.fill}>
-          <Text style={styles.capture} onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>
-        </Camera>
-      </View>
-    );
-  }
-
-  takePicture() {
-    const options = {};
-    //options.location = ...
-    this.camera.capture({metadata: options})
-      .then((data) => console.log(data))
-      .catch(err => console.error(err));
-  }
+  render() {
+   return(
+     <View style={{flex: 1}}>
+     <View style={{flex: 2, alignItems: 'center'}}>
+     <Text>Hello from videos</Text>
+    </View>
+    <NavigationBar/>
+  </View>
+   );
+ }
 }
 
-  const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  preview: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    alignItems: 'center'
-  },
-  capture: {
-    flex: 0,
-    backgroundColor: '#fff',
-    borderRadius: 5,
-    color: '#000',
-    padding: 10,
-    margin: 40
-  }
-  });
+const onPress2 = () => {
+ Alert.alert('We are working on the upload of video files')
+};
+
+const styles = StyleSheet.create({
+container: {
+ flex: 1,
+ flexDirection: 'row',
+},
+button: {
+ justifyContent: 'center',
+ alignItems: 'flex-start',
+ backgroundColor: 'white',
+ borderRadius: 10,
+ padding: 10,
+},
+preview: {
+ flex: 1,
+ justifyContent: 'flex-end',
+   alignItems: 'center'
+},
+capture: {
+ flex: 0,
+ backgroundColor: '#fff',
+ borderRadius: 5,
+ color: '#000',
+ padding: 10,
+ margin: 40
+}
+});
 export default Videos;

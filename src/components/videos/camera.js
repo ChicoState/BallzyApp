@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import NavigationBar from '../navigationbar/NavigationBar';
 import {
   StyleSheet,
   Button,
@@ -11,63 +12,44 @@ import {
 import Camera from 'react-native-camera';
 
 export class picCam extends React.Component{
-  render() {
-    return(
-      <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-end'}}>
-      <View style={{flex: 2, flexDirection: 'column', alignItems: 'flex-start'}}>
-      <View style={{flex: 1, justifyContent: 'space-between', alignItems: 'flex-start'}}>
-      <Text>Hello from videos</Text>
-      <View style={styles.button}>
-       <Button onPress={this.picCam} title="Picture"/>
-     </View>
-     </View>
-     </View>
-     <View style={{flex: 1, justifyContent: 'flex-end', alignItems: 'flex-end'}}>
-     <View style={styles.button2}>
-       <Button onPress={onPress2} title="Videos"/>
-     </View>
-     </View>
-   </View>
-    );
-  }
+  <View style={styles.container}>
+    <Camera
+      ref={(cam) => {
+        this.camera = cam;
+      }}
+      style={styles.preview}
+      aspect={Camera.constants.Aspect.fill}>
+      <Text style={styles.capture} onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>
+    </Camera>
+  </View>
+);
 }
 
-const onPress2 = () => {
-  Alert.alert('We are working on the upload of video files')
-};
+takePicture() {
+const options = {};
+this.camera.capture({metadata: options})
+  .then((data) => console.log(data))
+  .catch(err => console.error(err));
+}
+}
 
 const styles = StyleSheet.create({
 container: {
-  flex: 1,
-  flexDirection: 'row',
-},
-button: {
-  justifyContent: 'center',
-  alignItems: 'flex-start',
-  backgroundColor: 'white',
-  borderRadius: 10,
-  padding: 10,
-},
-button2: {
-  justifyContent: 'flex-end',
-  alignItems: 'flex-end',
-  backgroundColor: 'white',
-  borderRadius: 10,
-  padding: 10,
-  height: 50,
+flex: 1,
+flexDirection: 'row',
 },
 preview: {
-  flex: 1,
-  justifyContent: 'flex-end',
-    alignItems: 'center'
+flex: 1,
+justifyContent: 'flex-end',
+alignItems: 'center'
 },
 capture: {
-  flex: 0,
-  backgroundColor: '#fff',
-  borderRadius: 5,
-  color: '#000',
-  padding: 10,
-  margin: 40
+flex: 0,
+backgroundColor: '#fff',
+borderRadius: 5,
+color: '#000',
+padding: 10,
+margin: 40
 }
 });
 export default picCam
