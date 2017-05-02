@@ -33,7 +33,7 @@ const MainApp = TabNavigator (
       showIcon: true,
       showLabel: false,
       style: {
-        backgroundColor: '#333333',
+        backgroundColor: '#4D89F2',
       },
       indicatorStyle: {
         backgroundColor: '#E54747'
@@ -41,7 +41,6 @@ const MainApp = TabNavigator (
     },
     tabBarPosition: 'bottom',
     navigationOptions:({navigation}) => ({
-      headerLeft: null,
       headerRight:
         <TouchableOpacity style={{width: 45}} onPress = {() => navigation.navigate('Settings')}>
           <View style={{alignItems:'center', justifyContent: 'center'}}>
@@ -52,7 +51,7 @@ const MainApp = TabNavigator (
           </View>
         </TouchableOpacity>,
       headerStyle: {
-        backgroundColor: '#333333',
+        backgroundColor: '#42033D',
         flexDirection: 'row',
       },
       headerTitleStyle: {
