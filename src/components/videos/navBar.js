@@ -19,12 +19,12 @@ export default class NavigationBar extends React.Component {
       <View style={{flex:.2, flexDirection:'row'}}>
         <TouchableHighlight
           onPress={()=> {
-            Actions.picCam()
+            Actions.videos()
           }}
           style={styles.NavigationButton}
         >
           <Image
-            source={require('./video48x48.png')}
+            source={require('./cameraroll48x48.png')}
           />
         </TouchableHighlight>
 
@@ -35,18 +35,18 @@ export default class NavigationBar extends React.Component {
           style={styles.NavigationButton}
         >
           <Image
-            source={require('./video48x48.png')}
+            source={require('./pictures48x48.png')}
           />
         </TouchableHighlight>
 
         <TouchableHighlight
           onPress={()=> {
-            Actions.videos()
+            Actions.users()
           }}
           style={styles.NavigationButton}
         >
           <Image
-            source={require('./video48x48.png')}
+            source={require('./videorecord48x48.png')}
           />
         </TouchableHighlight>
       </View>
