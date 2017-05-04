@@ -2,249 +2,249 @@
 <items version="2" >
 
     <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-ba12774936c894d26220960de4bec381442c7f24.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0-c94b5afad9d232ace95a822d5188503ad3e43aee.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-608d19cb2ee0ea4a6cf46260be3349b57fa57fef.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.adobe.xmp/xmpcore/5.1.2/55615fa2582424e38705487d1d3969af8554f637/xmpcore-5.1.2.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="55615fa2582424e38705487d1d3969af8554f637">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/xmpcore-5.1.2-4e3e96209de66afb0ec35b13b6ad4e680341169f.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-0ce9ded5ec9e536ba7db6d0db2d2807a8af9259d.jar" />
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-df5d474caa71ffd012134997ebd79c71627d2998.jar" />
     </item>
     <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0-0d76ac015b898134245dfc4e23bdb8fdf0f36bd3.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-c2bdfd9c0da542b189cc1c9db3765ecbd542f47a.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0-237c246e1a472344ad2e626352f8fd1f37c91a85.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-042cbf36bf1624646039db777dc51ea663d7d6c4.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1-6deb41a3cc4bc6cd0f37d01917aae9b0ccf62fe5.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-207c36de3d315f44750d2cd5f8bfd673f5aea9e9.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-a1a5f3239097fdc914faa401f7da6f45f51645f7.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-1bf3647ef47806b01912d962755b2b61f85b7f94.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="b49a04a3016689b372ecbb77f0c33e486e768cca">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-2122c376845dae61cc02594080d96c464a0f12d1.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-cbe05c745ecab99a7b0572d1ed4d2221d359cf4b.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-c59157c08227d471d5f6e0567f35b1fbd2371be7.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-9f72e9015db21b049792480203a2aade7d09cbf0.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="3341b66c54367e777a0647e2db96c045329bfeab">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-7ffab78469c66f927a11fa6e9d3c4f5eba8dacfe.jar" />
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-3ebbf5624c27fb56389125d038eb04f3cf16c494.jar" />
     </item>
     <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/javax.inject-1-fe1d8a686bf4a9b11f09efd9f10950fc6239d2b2.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-63f2f7bd178f474078388bf518f070bc783878c1.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-camera/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="a74ddaa81caf382edffc5eca2a2f7674a9754934">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-498a1fea42a0ba30e0f13ee76cdb34e2bebbf765.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-769521b8dcfe811c11ab446bd89ab0f00594bc2d.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/libs/infer-annotations-1.5.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-bf7af0588ea59d2baeb08621b57ee244d2130542.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-449cbf62c4f93435cb10510afb3a85fd83b24105.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-3f8557d9efd64f8c381c1133411071788d26c14a.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-9f5c4e725af159fe7ab30170b893b7c8d9304610.jar" />
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-78a716f1d603277c93fbead1312e769d7ce992e9.jar" />
     </item>
     <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.drewnoakes/metadata-extractor/2.9.1/53fdf22be10c9d426ec63431c7342895bc642261/metadata-extractor-2.9.1.jar"
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="53fdf22be10c9d426ec63431c7342895bc642261">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/metadata-extractor-2.9.1-b092456c8af71bcc5f8f9b8da61c99d6efabf9ed.jar" />
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-92f341b238db5d4773121ada0a075e45a5908cae.jar" />
     </item>
     <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-d8dc5f046f07a991137f2e6b2aeae79d97160d8f.jar" />
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-ff489f72c9e0ea87ff4b9638cca2a23c33881bb0.jar" />
     </item>
     <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-22ba308731db46201b99983d52d547623bb9f806.jar" />
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1-a15113320c343cf173275346387dd88e18ef6adf.jar" />
     </item>
     <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-3cba22dbb7e7b4f7cac0c54070234611ba4ce201.jar" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-a18d897016cea5645a80322edf85293ae3e4f772.jar" />
     </item>
     <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0-493f1bd2b18fab2410400962444cc745bf5b0db1.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-779fdcc4c96bdbb627330db8266eb37efd3e83f9.jar" />
-    </item>
-    <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1-bf67cd83ff8e4c3f846df6d6bd723bf4eea8646f.jar" />
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1-c01fcd2c4d37d0b50eb982e98effd164ded0835e.jar" />
     </item>
     <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-3f7731fe6ce42bee936f2e557b859ae08fae1226.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0-a6654454e18ad8d15c6e6e31085e9dc627eb9948.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-514fc1f0d04c94057d4d71fef895fc1483215b50.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-dcaf6f823c60c90743b23bd6ad989802224898aa.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/javax.inject-1-f6bd4bcdafc7d4b93e63867bfdf4aa9c55734cc0.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-96bd2092d382941d25dde4e02f34af7b427f71bd.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0-0ad2f40482b2ca99d6334148ff56cbf4b26d841b.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/BallzyApp/react-native-camera/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="290b2a678ac32f8cecb54b4515da9098b829df1d">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-9b63f397bec0cfed5fc82f122ab0cd9bcdffad6d.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-00d9dca860d6c7701f3cb5758d219fc71a5d9e90.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-c93f8e457c8c33ec8fdd7bd89b906ded7d081d8d.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-28de3ab53a5e0b831048b0c0713a3cb7f26997df.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-b9b65bdb350bcfdafd836b13809bdef8b67ca761.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1-8012393a2a262a656af705767aac76a60da359b9.jar" />
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1-6e2a78fdf20a87a1b7d154c14eda2e0df90ea5d9.jar" />
     </item>
     <item
-        jar="/home/cperez44/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
+        jar="/home/etapia8/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0-aa47ae6c836361f0985a2e53bb0852289263211f.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-cf944b85ffed45b0d9532f714c3fabf04fd33ae3.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-876bc47319e00a033b97058a1d505d764b115616.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
-        <dex dex="/home/cperez44/Desktop/BallzyApp/android/app/build/intermediates/pre-dexed/debug/core-3.2.1-c2f06f5978a0e1326140e20fd8a306da78e3ff00.jar" />
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/core-3.2.1-9256b7d25031fba4f0cffba122058be1858f5fdb.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.adobe.xmp/xmpcore/5.1.2/55615fa2582424e38705487d1d3969af8554f637/xmpcore-5.1.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="55615fa2582424e38705487d1d3969af8554f637">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/xmpcore-5.1.2-18dcdc3ff5e83593f2ae255856c6b764a4709f26.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.drewnoakes/metadata-extractor/2.9.1/53fdf22be10c9d426ec63431c7342895bc642261/metadata-extractor-2.9.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="53fdf22be10c9d426ec63431c7342895bc642261">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/metadata-extractor-2.9.1-3f74fc20c49f06f773e68bba9914adf326dfbc07.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0-da4df71a8f1810bec2c39ad7738cf9ffff76c38c.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-b31e406db2f2ebc53c25202847d327450e2da391.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b49a04a3016689b372ecbb77f0c33e486e768cca">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-64cd987bd9dd9206d87ad93ea03d0102e519a98c.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-5461a5937ed4d4900a4d147a6385b774f5a5fdc4.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-d8e35f4d6ef0c5133dbaa2e116117591ed454404.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-72198c42cbd621abc0a216b912bf43eff155ee00.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-edd6b220aa1c68b3a84bfbb9306704b954cb7ed1.jar" />
+    </item>
+    <item
+        jar="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/home/etapia8/Documents/BallzyApp/android/app/build/intermediates/pre-dexed/debug/classes-8dcdb5743171f4a205eecf1b056483a4745513f8.jar" />
     </item>
 
 </items>

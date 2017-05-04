@@ -9,6 +9,7 @@ import Login from './components/rootlogin/Login';
 import Chat from './components/chat/Chat';
 import Messaging from './components/chat/Messaging';
 import Signup from './components/rootlogin/Signup';
+import Settings from './components/settings/Settings';
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
@@ -20,7 +21,10 @@ import {
 } from 'react-native-router-flux';
 
 import {
-  Platform
+  Platform,
+  TouchableOpacity,
+  Image,
+  View,
 } from 'react-native';
 
 
@@ -38,13 +42,32 @@ const MainApp = TabNavigator (
       showLabel: false,
   },
   tabBarPosition: 'bottom',
+  navigationOptions:({navigation}) => ({
+  headerRight:
+    <TouchableOpacity style={{width: 45}} onPress = {() => navigation.navigate('Settings')}>
+      <View style={{alignItems:'center', justifyContent: 'center'}}>
+        <Image
+          source={require('./img/cog.png')}
+          style = {{width: 28, height: 28}}
+        />
+      </View>
+    </TouchableOpacity>,
+  headerStyle: {
+    backgroundColor: '#42033D',
+    flexDirection: 'row',
+    },
+    headerTitleStyle: {
+      color: '#EFEFEF',
+    }
+  }),
 })
 
 const App = StackNavigator ({
-  Login: { screen: Login },
-  Signup: { screen: Signup },
+//  Login: { screen: Login },
+//  Signup: { screen: Signup },
   Mainapp: { screen: MainApp },
-  Messaging: { screen: Messaging}
+  Messaging: { screen: Messaging},
+  Settings: {screen: Settings}
 });
 
 export default App;
