@@ -1,4 +1,5 @@
 import firebaseApp from '../../globals';
+import firebase from 'firebase';
 
 class Backend {
   state = {
@@ -81,7 +82,7 @@ class Backend {
       this.messagesRef.push({
         text: message[i].text,
         user: message[i].user,
-        createdAt: firebaseApp.database.ServerValue.TIMESTAMP,
+        createdAt: firebase.database.ServerValue.TIMESTAMP
       });
     }
   }
