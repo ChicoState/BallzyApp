@@ -7,6 +7,7 @@ import Videos from './components/videos/Videos';
 import Users from './components/users/Users';
 import Login from './components/rootlogin/Login';
 import Chat from './components/chat/Chat';
+import Messaging from './components/chat/Messaging';
 import Signup from './components/rootlogin/Signup';
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
@@ -40,9 +41,10 @@ const MainApp = TabNavigator (
 })
 
 const App = StackNavigator ({
-  Login: { screen: Login },
-  Signup: { screen: Signup },
-  Mainapp: { screen: MainApp }
+  //Login: { screen: Login },
+  //Signup: { screen: Signup },
+  Mainapp: { screen: MainApp },
+  Messaging: { screen: Messaging}
 });
 
 export default App;

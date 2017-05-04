@@ -59,11 +59,7 @@ class Chat extends React.Component {
           />
           <TouchableOpacity
             style = {styles.button}
-            onPress = {() => {
-              Actions.messaging({
-                name: this.state.name,
-              });
-            }}
+            onPress = {() => this.props.navigation.navigate('Messaging')}
           >
             <Text style = {styles.buttonText}>
               Next

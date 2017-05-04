@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebaseApp from '../../globals';
 
 class Backend {
   state = {
@@ -8,18 +8,20 @@ class Backend {
   uid = '';
   messagesRef = null;
   //initialize Firebase Backend
+  //the database already initialized in globals.js
   constructor() {
-    firebase.initializeApp({
+    /*firebase.initializeApp({
       apiKey: 'AIzaSyBxccEYYuv1ivbKfPN_Tbguh8fKe4uz2lg',
       authDomain: 'ballzyapp-7aba2.firebaseapp.com',
       databaseURL: 'https://ballzyapp-7aba2.firebaseio.com/',
       storageBucket: 'ballzyapp-7aba2.appspot.com',
     });
-    firebase.auth().onAuthStateChanged((user) => {
+    */
+    firebaseApp.auth().onAuthStateChanged((user) => {
       if(user) {
         this.setUid(user.uid);
       } else {
-        firebase.auth().signInAnonymously().catch((error) => {
+        firebaseApp.auth().signInAnonymously().catch((error) => {
           alert(error.message);
         });
       }
@@ -27,7 +29,7 @@ class Backend {
 
 
 
-    this.state = {
+    /*this.state = {
       newChallenge: '',
       email: '',
       pass: '',
@@ -45,7 +47,7 @@ class Backend {
     this.state = {
       dataSource: ds.cloneWithRows(['row 1', 'row 2']),
     };
-
+    */
 
 
 
@@ -57,7 +59,7 @@ class Backend {
     return this.uid;
   }
   loadMessages(callback) {
-    this.messagesRef = firebase.database().ref('messages');
+    this.messagesRef = firebaseApp.database().ref('messages');
     this.messagesRef.off();
     const onReceive = (data) => {
       const message = data.val();
@@ -79,7 +81,7 @@ class Backend {
       this.messagesRef.push({
         text: message[i].text,
         user: message[i].user,
-        createdAt: firebase.database.ServerValue.TIMESTAMP,
+        createdAt: firebaseApp.database.ServerValue.TIMESTAMP,
       });
     }
   }
