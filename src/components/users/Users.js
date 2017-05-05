@@ -15,6 +15,7 @@ import {
 
 class Users extends React.Component {
   static navigationOptions = {
+    title: 'Profile',
     tabBarIcon: () => (
       <Image
         source={require('../navigationbar/users48x48.png')}

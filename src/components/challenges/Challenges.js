@@ -25,6 +25,8 @@ import Firebase from 'firebase';
 class Challenges extends React.Component {
   static navigationOptions = {
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+
+    title: 'Challenges',
     tabBarIcon: () => (
       <Image
         source={require('../navigationbar/hometent48x48.png')}

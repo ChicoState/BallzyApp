@@ -44,7 +44,7 @@ export default class Login extends Component {
       this.setState({
         loading: false
       });
-      alert('Login Failed. Please try again'+error);
+      alert('Login Failed. Please try again'+ error);
       });
   }
   render() {

@@ -17,6 +17,7 @@ import Camera from 'react-native-camera';
 class Videos extends React.Component {
   static navigationOptions = {
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    title: 'Videos',
     tabBarIcon: () => (
       <Image
         source={require('../navigationbar/video48x48.png')}

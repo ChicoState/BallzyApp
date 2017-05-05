@@ -19,6 +19,7 @@ import{
 class Chat extends React.Component {
   static navigationOptions = {
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    title: 'Chat',
     tabBarIcon: () => (
       <Image
         source={require('../navigationbar/conversations48x48.png')}
