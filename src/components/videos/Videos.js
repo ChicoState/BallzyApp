@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NavigationBar from '../videos/navBar';
 
 import {
   StyleSheet,
@@ -30,15 +29,38 @@ class Videos extends React.Component {
      <View style={{flex: 1}}>
      <View style={{flex: 2, alignItems: 'center'}}>
      <Text>Hello from videos</Text>
+     <Button onPress={onPress2} title="Camera Roll"/>
     </View>
-    <NavigationBar/>
+    <View style={{flex:.2, flexDirection:'row'}}>
+      <TouchableHighlight
+        onPress={()=>
+          this.props.navigation.navigate('picCamera')
+        }
+        style={styles.NavigationButton}
+      >
+        <Image
+          source={require('./pictures48x48.png')}
+        />
+      </TouchableHighlight>
+
+      <TouchableHighlight
+        onPress={()=>
+          this.props.navigation.navigate()
+        }
+        style={styles.NavigationButton}
+      >
+        <Image
+          source={require('./videorecord48x48.png')}
+        />
+      </TouchableHighlight>
+    </View>
   </View>
    );
  }
 }
 
 const onPress2 = () => {
- Alert.alert('We are working on the upload of video files')
+ Alert.alert('We are working on the opening of pictures')
 };
 
 const styles = StyleSheet.create({
@@ -65,6 +87,12 @@ capture: {
  color: '#000',
  padding: 10,
  margin: 40
-}
+},
+NavigationButton: {
+  backgroundColor: '#121212',
+  flex: 1,
+  alignItems: 'center',
+  justifyContent: 'center',
+},
 });
 export default Videos;

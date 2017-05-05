@@ -10,6 +10,7 @@ import Chat from './components/chat/Chat';
 import Messaging from './components/chat/Messaging';
 import Signup from './components/rootlogin/Signup';
 import Settings from './components/settings/Settings';
+import picCam from './components/videos/piccamera';
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
@@ -67,7 +68,8 @@ const App = StackNavigator ({
 //  Signup: { screen: Signup },
   Mainapp: { screen: MainApp },
   Messaging: { screen: Messaging},
-  Settings: {screen: Settings}
+  Settings: {screen: Settings},
+  picCamera: {screen: picCam},
 });
 
 export default App;
