@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationBar from '../navigationbar/NavigationBar';
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 import firebaseApp from '../../globals'
 
 import {
@@ -13,6 +13,7 @@ import {
     TouchableHighlight,
     TouchableOpacity,
     ListView,
+    Alert,
 } from 'react-native';
 
 import {
@@ -38,7 +39,7 @@ class Challenges extends React.Component {
     search: '',
   };
 
-/*  constructor(props) {
+  constructor(props) {
     super(props);
 
     const config = {
@@ -48,10 +49,11 @@ class Challenges extends React.Component {
       storageBucket: 'testballzy.appspot.com'
     }
 
-    //const firebaseApp = firebase.initializeApp(config);
-    //const myFirebaseRef = firebaseApp.database().ref('list');
 
-    //this.itemsRef = myFirebaseRef.child('Challenges');
+    //const firebaseApp = firebase.initializeApp(config);
+    const myFirebaseRef = firebaseApp.database().ref('list');
+
+    this.itemsRef = myFirebaseRef.child('Challenges');
 
     this.state = {
       newChallenge: '',
@@ -60,6 +62,7 @@ class Challenges extends React.Component {
       title: '',
       price: '',
       description: '',
+      uid: '',
       chalArr: [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],
       //todoSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row !=row2})
     };
@@ -73,8 +76,8 @@ class Challenges extends React.Component {
     //};
 
   }
-*/
-/*
+
+
   componentDidMount() {
     this.itemsRef.on('child_added', (dataSnapshot) => {
       this.items.push({id: dataSnapshot.key, text: dataSnapshot.val()});
@@ -99,14 +102,42 @@ class Challenges extends React.Component {
       //  todoSource: this.state.todoSource.cloneWithRows(this.items)
     //  })
     });
+
+    const {state} = this.props.navigation;
+    this.state.title = state.params ? state.params.chaltitle : "";
+    this.state.description = state.params ? state.params.description : "";
+    this.state.price = state.params ? state.params.price : "";
+
+    if(firebase.auth().currentUser != null) {
+      this.state.uid = firebase.auth().currentUser.uid;
+    }
+
+    if(this.state.uid == '') {
+      Alert.alert(
+        'Warning',
+        'You must log in to create challenges',
+        [
+          {text: 'Cancel', onPress: () => console.log(''), style: ''},
+          {text: 'OK', onPress: () => console.log('')},
+        ],
+          { cancelable: true }
+        )
+        // No user is signed in.
+    }
+    else {
+      this.addChallenge();
+    }
+
   }
+
 
   addChallenge() {
     if (this.state.title !== '' && this.state.description !== '') {
       this.itemsRef.push({
         title: this.state.title,
         description: this.state.description,
-        price: this.state.price
+        price: this.state.price,
+        uid: this.state.uid
       });
       this.setState({
         title: '',
@@ -119,12 +150,12 @@ class Challenges extends React.Component {
   removeTodo(rowData) {
     this.itemsRef.child(rowData.id).remove();
   }
-*/
-/*
+
+
   renderRow(rowData) {
     return(
       <TouchableHighlight
-        //onPress={() => this.removeTodo(rowData)}>
+        onPress={() => this.removeTodo(rowData)}>
         <View>
           <View style={styles.row}>
             <Text style={styles.todoText}>{rowData.text}</Text>
@@ -133,8 +164,8 @@ class Challenges extends React.Component {
       </TouchableHighlight>
     );
   }
-*/
-/*
+
+
   printChals() {
     return this.state.chalArr.map(function(chals, i){
       return(
@@ -148,8 +179,11 @@ class Challenges extends React.Component {
       );
     });
   }
-*/
+
+
+
   render() {
+
     return (
       <View style={styles.container}>
         <View style={{flex:10}}>
@@ -164,50 +198,11 @@ class Challenges extends React.Component {
             value={this.state.search}
           />
 
-
           <View>
+              {this.printChals()}
 
           </View>
 
-          <View style={styles.inputView}>
-          <TextInput
-            style={styles.titleInput}
-            placeholder='Title'
-            onChangeText={(text) => {
-                this.setState({
-                  title: text,
-                });
-              }}
-              value={this.state.title}
-          />
-          <TextInput
-            style={styles.titleInput}
-            placeholder='Description'
-            onChangeText={(text) => {
-                this.setState({
-                  description: text,
-                });
-              }}
-              value={this.state.description}
-          />
-          <TextInput
-            style={styles.titleInput}
-            placeholder='Price'
-            onChangeText={(text) => {
-                this.setState({
-                  price: text,
-                });
-              }}
-              value={this.state.price}
-          />
-
-          <TouchableHighlight
-            onPress={() => this.addChallenge()}>
-            <Text style={styles.buttonText}>
-              Create
-            </Text>
-          </TouchableHighlight>
-          </View>
 
           <View style={{flex:0.5, flexDirection: 'row', justifyContent: 'space-between'}}>
           <TouchableOpacity
@@ -225,12 +220,8 @@ class Challenges extends React.Component {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() => {
-            Actions.new({
-              search: this.state.search,
-            });
-          }}
-        >
+          onPress={() => {this.props.navigation.navigate('New')}}>
+
           <Text style={styles.buttonText}>
             Create
           </Text>

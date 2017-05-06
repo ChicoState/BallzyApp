@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/etapia8/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-mk-rMK/values-mk-rMK.xml -->
+<<<<<<< HEAD
+    <!-- From: file:/home/inderdeepsandhar/ChicoState/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-mk-rMK/values-mk-rMK.xml -->
+=======
+    <!-- From: file:/home/brennan/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-mk-rMK/values-mk-rMK.xml -->
+>>>>>>> 3dcf1fd083387743e8b1521e100ff51f1e4b0a74
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Движи се кон дома"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>

@@ -12,4 +12,8 @@
     <item
         android:drawable="@drawable/common_google_signin_btn_icon_light_normal" />
 </selector>
-<!-- From: file:/tmp/tmp-deduplicated6141127760898580491/java/com/google/android/gmscore/integ/client/base/res/drawable/common_google_signin_btn_icon_light.xml --><!-- From: file:/home/etapia8/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable/common_google_signin_btn_icon_light.xml -->
+<<<<<<< HEAD
+<!-- From: file:/tmp/tmp-deduplicated6141127760898580491/java/com/google/android/gmscore/integ/client/base/res/drawable/common_google_signin_btn_icon_light.xml --><!-- From: file:/home/inderdeepsandhar/ChicoState/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable/common_google_signin_btn_icon_light.xml -->
+=======
+<!-- From: file:/tmp/tmp-deduplicated6141127760898580491/java/com/google/android/gmscore/integ/client/base/res/drawable/common_google_signin_btn_icon_light.xml --><!-- From: file:/home/brennan/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable/common_google_signin_btn_icon_light.xml -->
+>>>>>>> 3dcf1fd083387743e8b1521e100ff51f1e4b0a74

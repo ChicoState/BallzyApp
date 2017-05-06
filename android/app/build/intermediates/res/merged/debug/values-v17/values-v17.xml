@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/etapia8/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v17/values-v17.xml -->
+<<<<<<< HEAD
+    <!-- From: file:/home/inderdeepsandhar/ChicoState/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v17/values-v17.xml -->
+=======
+    <!-- From: file:/home/brennan/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v17/values-v17.xml -->
+>>>>>>> 3dcf1fd083387743e8b1521e100ff51f1e4b0a74
     <eat-comment/>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
         <item name="android:textAlignment">viewStart</item>

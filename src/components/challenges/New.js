@@ -57,14 +57,13 @@ class New extends React.Component {
 
         <TouchableOpacity
         style={styles.button}
-        onPress={() => {
-          Actions.challenges({
-            title: this.state.title,
-            description: this.state.description,
-            price: this.state.price,
-          });
-        }}
-        >
+        onPress={() => this.props.navigation.navigate('Challenges', {
+          chaltitle: this.state.title,
+          description: this.state.description,
+          price: this.state.price,
+
+        })}>
+
         <Text style={styles.buttonText}>
           Create
         </Text>
