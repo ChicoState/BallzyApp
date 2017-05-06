@@ -27,10 +27,13 @@ class Settings extends React.Component {
       <View style={{flex: 1}}>
         <View style={styles.settingsHeader}>
           <View style={{flex: .3}}/>
-          <View style={{flex:9.4}}>
+          <View style={{flex:9.4,alignItems:'center',flexDirection:'row'}}>
             <TouchableOpacity onPress={()=>this.props.navigation.dispatch(backAction)}>
-                <Image style={{height:28,width: 28}} source={require('./backbutton.png')}/>
+              <Image style={{height:28,width: 28}} source={require('./backbutton.png')}/>
             </TouchableOpacity>
+            <View style={{flex: 1}}/>
+            <Text style={styles.settingstitle}>Settings</Text>
+            <View style={{flex: 1}}/>
           </View>
           <TouchableOpacity onPress={()=> this.logout()}>
             <View style={styles.smllbutton}>
