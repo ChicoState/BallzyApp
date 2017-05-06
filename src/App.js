@@ -41,6 +41,9 @@ const MainApp = TabNavigator (
     tabBarOptions: {
       showIcon: true,
       showLabel: false,
+      style: {
+        backgroundColor: '#42033D'
+      }
   },
   tabBarPosition: 'bottom',
   navigationOptions:({navigation}) => ({
@@ -53,6 +56,7 @@ const MainApp = TabNavigator (
         />
       </View>
     </TouchableOpacity>,
+  headerLeft: null,
   headerStyle: {
     backgroundColor: '#42033D',
     flexDirection: 'row',
@@ -64,8 +68,8 @@ const MainApp = TabNavigator (
 })
 
 const App = StackNavigator ({
-  //Login: { screen: Login },
-  //Signup: { screen: Signup },
+ // Login: { screen: Login },
+ // Signup: { screen: Signup },
   Mainapp: { screen: MainApp },
   Messaging: { screen: Messaging},
   Settings: {screen: Settings},
