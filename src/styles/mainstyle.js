@@ -31,11 +31,17 @@ export default StyleSheet.create({
     flexDirection:'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    backgroundColor:'#F7FFF7'
+    backgroundColor:'#F7FFF7',
+    borderBottomWidth: 1,
+    borderColor: '#506c64'
   },
   titletext:{
     color: '#42033D',
     fontSize: 30,
+  },
+  settingstitle:{
+    color: '#42033D',
+    fontSize: 25,
   },
   buttontext:{
     color: 'white',
