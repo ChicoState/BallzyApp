@@ -3,9 +3,11 @@ import firebaseApp from '../../globals';
 import {
   Text,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  Image
 } from 'react-native';
 import styles from '../../styles/mainstyle'
+import { NavigationActions } from 'react-navigation';
 
 class Settings extends React.Component {
   static navigationOptions = {
@@ -20,10 +22,16 @@ class Settings extends React.Component {
     }
   }
   render() {
+    const backAction = NavigationActions.back();
     return(
       <View style={{flex: 1}}>
         <View style={styles.settingsHeader}>
-          <View style={{flex:9.7}}/>
+          <View style={{flex: .3}}/>
+          <View style={{flex:9.4}}>
+            <TouchableOpacity onPress={()=>this.props.navigation.dispatch(backAction)}>
+                <Image style={{height:28,width: 28}} source={require('./backbutton.png')}/>
+            </TouchableOpacity>
+          </View>
           <TouchableOpacity onPress={()=> this.logout()}>
             <View style={styles.smllbutton}>
               <Text style={styles.buttontext}>Log out</Text>
