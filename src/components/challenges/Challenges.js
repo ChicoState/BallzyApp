@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationBar from '../navigationbar/NavigationBar';
 import firebase from 'firebase';
 import firebaseApp from '../../globals'
+import Firebase from 'firebase';
 
 import {
     View,
@@ -21,7 +22,7 @@ import {
 } from 'react-native-router-flux';
 
 //var Firebase = require('firebase');
-import Firebase from 'firebase';
+var superheroarray = ["Superman", "Batman", "Flash", "WonderWoman", "Green Lantern", "Cyborg"];
 
 class Challenges extends React.Component {
   static navigationOptions = {
@@ -63,17 +64,14 @@ class Challenges extends React.Component {
       price: '',
       description: '',
       uid: '',
+      pressData: ({}: {[key: number]: boolean}),
       chalArr: [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],
-      //todoSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row !=row2})
+      chalSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row1.guid != row2.guid}),
     };
+
 
     this.items = [];
     this.tempChallArray = [];
-
-    //const ds = new ListView.DataSource({rowHasChanged:(r1,r2) => r1 !== r2});
-    //this.state = {
-      //dataSource: ds.cloneWithRows(['row 1', 'row 2']),
-    //};
 
   }
 
@@ -81,9 +79,9 @@ class Challenges extends React.Component {
   componentDidMount() {
     this.itemsRef.on('child_added', (dataSnapshot) => {
       this.items.push({id: dataSnapshot.key, text: dataSnapshot.val()});
-      //this.setState({
-      //  todoSource: this.state.todoSource.cloneWithRows(this.items)
-      //})
+      this.setState({
+        chalSource: this.state.chalSource.cloneWithRows(this.items)
+      })
     });
 
     this.itemsRef.on("value", (allChallSnapshot) => {
@@ -98,9 +96,9 @@ class Challenges extends React.Component {
 
     this.itemsRef.on('child_removed', (dataSnapshot) => {
       this.items = this.items.filter((x) => x.id !== dataSnapshot.key);
-      //this.setState({
-      //  todoSource: this.state.todoSource.cloneWithRows(this.items)
-    //  })
+      this.setState({
+        chalSource: this.state.chalSource.cloneWithRows(this.items)
+      })
     });
 
     const {state} = this.props.navigation;
@@ -151,20 +149,60 @@ class Challenges extends React.Component {
     this.itemsRef.child(rowData.id).remove();
   }
 
-
   renderRow(rowData) {
     return(
       <TouchableHighlight
         onPress={() => this.removeTodo(rowData)}>
         <View>
           <View style={styles.row}>
-            <Text style={styles.todoText}>{rowData.text}</Text>
+            <Text style={styles.todoText}>{rowData.text.title}</Text>
           </View>
         </View>
       </TouchableHighlight>
     );
   }
 
+
+  /*_renderRow(rowData: string, sectionID: number, rowID: number,
+    highlightRow: (sectionID: number, rowID: number) => void) {
+      var rowHash = Math.abs(hashCode(rowData));
+      var imgSource = THUMB_URLS[rowHash % THUMB_URLS.length];
+      return (
+        <TouchableHighlight
+          onPress={() => { this._pressRow(rowID);
+            highlightRow(sectionID, rowID); }}
+        >
+        <View>
+          <View style={styles.row}>
+            <Image style={styles.thumb} source={imgSource} />
+              <Text style={styles.text}>
+                {rowData + ' - ' + LOREM_IPSUM.substr(0, rowHash % 301 + 10)}
+              </Text>
+          </View>
+        </View>
+        </TouchableHighlight>
+      );
+    }
+
+  pressRow(rowID: number) {
+    this.pressData[rowID] = !this.pressData[rowID];
+    this.setState({
+      chalSource: this.state.chalSource.cloneWithRows(this.items)
+    )}
+  }
+
+  renderSeparator(sectionID: number, rowID: number, adjacentRowHighlighted: bool) {
+    return (
+      <View key={`${sectionID}-${rowID}`}
+      style={{ height: adjacentRowHighlighted ? 4 : 1,
+        backgroundColor: adjacentRowHighlighted ? '#3B5998' : '#CCCCCC', }} />
+    );
+  }
+
+
+  componentWillMount() {
+    this.pressData = {};
+  }*/
 
   printChals() {
     return this.state.chalArr.map(function(chals, i){
@@ -179,7 +217,6 @@ class Challenges extends React.Component {
       );
     });
   }
-
 
 
   render() {
@@ -198,24 +235,25 @@ class Challenges extends React.Component {
             value={this.state.search}
           />
 
-          <View>
-              {this.printChals()}
 
-          </View>
+        <ListView
+          dataSource = {this.state.chalSource}
+          renderRow = {this.renderRow.bind(this)}
+        />
 
 
-          <View style={{flex:0.5, flexDirection: 'row', justifyContent: 'space-between'}}>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => {
-              Actions.new({
-                search: this.state.search,
-              });
-            }}
-          >
-          <Text style={styles.buttonText}>
-            Search
-          </Text>
+        <View style={{flex:0.5, flexDirection: 'row', justifyContent: 'space-between'}}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => {
+            Actions.new({
+              search: this.state.search,
+            });
+          }}
+        >
+        <Text style={styles.buttonText}>
+          Search
+        </Text>
         </TouchableOpacity>
 
         <TouchableOpacity

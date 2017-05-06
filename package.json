@@ -11,6 +11,8 @@
     "react": "15.4.2",
     "react-native": "0.41.2",
     "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
+    "react-native-easy-listview-gridview": "^1.0.3",
+    "react-native-gifted-listview": "0.0.15",
     "react-native-router-flux": "^3.38.0",
     "react-native-scrollable-tab-view": "^0.7.2",
     "react-native-tab-view": "0.0.56"
