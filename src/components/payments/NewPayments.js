@@ -11,31 +11,51 @@ import {
   Actions
 } from 'react-native-router-flux';
 
+import {createCardToken} from './Stripe';
+
 class StripePayments extends React.Component {
   state={
-    Login: '',
-    Password: '',
+    CardNo: '',
+    CardMo: '',
+    CardYr: '',
+    CardCvc: ''
   };
   render() {
     return(
     <View style = {styles.container}>
-      <Text style={styles.titleText}>Select Your Card</Text>
+      <Text style={styles.titleText}>New Card</Text>
       <TextInput 
 	    style={styles.input}
-	    placeholder='E-Mail'
+	    placeholder='Card Number'
 	    onChangeText={(text) =>{
-	    this.setState({Login: text})}}
+	    this.setState({CardNo: text})}}
       />
       <TextInput 
 	    style={styles.input}
-	    placeholder='Password'
+	    placeholder='Expiration Month'
 	    onChangeText={(text) =>{
-	    this.setState({Password: text})}}
+	    this.setState({CardMo: text})}}
+      />
+      <TextInput 
+	    style={styles.input}
+	    placeholder='Expiration Year'
+	    onChangeText={(text) =>{
+	    this.setState({CardYr: text})}}
+      />
+      <TextInput 
+	    style={styles.input}
+	    placeholder='Card CVC'
+	    onChangeText={(text) =>{
+	    this.setState({CardCvc: text})}}
       />
         <TouchableOpacity
-          onPress={() => {this.props.navigation.navigate('Payments')}}>
+          onPress={() => {
+            const Token = createCardToken(this.state.CardNo, this.state.CardMo, this.state.CardYr, this.state.CardCvc);
+            this.props.navigation.navigate('Payments');
+          }}
+        >
           <Text style={styles.buttonText}>
-            Login
+            Submit
           </Text>
         </TouchableOpacity>
      </View>

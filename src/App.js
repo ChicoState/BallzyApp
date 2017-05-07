@@ -3,6 +3,8 @@ import React from 'react';
 import Challenges from './components/challenges/Challenges';
 import New from './components/challenges/New';
 import Payments from './components/payments/Payments';
+import cardPayments from './components/payments/CardPayments';
+import newPayments from './components/payments/NewPayments';
 import Videos from './components/videos/Videos';
 import Users from './components/users/Users';
 import Login from './components/rootlogin/Login';
@@ -74,7 +76,9 @@ const App = StackNavigator ({
   Messaging: { screen: Messaging},
   Settings: {screen: Settings},
   picCamera: {screen: picCam},
-  New: {screen: New}
+  New: {screen: New},
+  cardPayments: { screen: cardPayments },
+  newPayments: { screen: newPayments }
 });
 
 export default App;
