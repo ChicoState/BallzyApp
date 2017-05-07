@@ -48,6 +48,7 @@ const MainApp = TabNavigator (
       }
   },
   tabBarPosition: 'bottom',
+  swipeEnabled: false,
   navigationOptions:({navigation}) => ({
   headerRight:
     <TouchableOpacity style={{width: 45}} onPress = {() => navigation.navigate('Settings')}>

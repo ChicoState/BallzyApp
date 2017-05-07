@@ -44,7 +44,7 @@ var styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'stretch',
-    backgroundColor: '#00BFFF'
+    backgroundColor: '#dcebfc'
   },
   button1: {
     marginTop: 20,

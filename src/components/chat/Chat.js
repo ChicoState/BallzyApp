@@ -82,7 +82,7 @@ var styles = StyleSheet.create( {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'stretch',
-    backgroundColor: '#00BFFF'
+    backgroundColor: '#dcebfc'
   },
   loginContainer: {
     flex: 10,
@@ -103,7 +103,6 @@ var styles = StyleSheet.create( {
     padding: 5,
     width: 250,
     height: 40,
-    borderWidth: 2,
     borderColor: 'black',
     margin: 20,
     backgroundColor: 'white'
@@ -111,12 +110,11 @@ var styles = StyleSheet.create( {
   button: {
     height: 50,
     width: 250,
-    borderWidth: 1,
+    borderWidth: 0,
     borderRadius: 5,
-    borderColor: '#7F8284',
     padding: 10,
     marginTop: 5,
-    backgroundColor: '#AEB3B7'
+    backgroundColor: '#4392F1'
   },
   buttonText: {
     fontSize: 20,
