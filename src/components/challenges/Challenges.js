@@ -107,12 +107,12 @@ class Challenges extends React.Component {
     this.state.price = state.params ? state.params.price : "";
 
 
-
     this.addChallenge();
+    
   }
 
   componentWillMount() {
-  
+
     if(firebase.auth().currentUser != null) {
       this.state.uid = firebase.auth().currentUser.uid;
     }
