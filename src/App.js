@@ -13,6 +13,7 @@ import Messaging from './components/chat/Messaging';
 import Signup from './components/rootlogin/Signup';
 import Settings from './components/settings/Settings';
 import picCam from './components/videos/piccamera';
+import ChallDescription from './components/challenges/ChallengeDescription';
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
@@ -79,7 +80,9 @@ const App = StackNavigator ({
   picCamera: {screen: picCam},
   New: {screen: New},
   cardPayments: { screen: cardPayments },
-  newPayments: { screen: newPayments }
+  newPayments: { screen: newPayments },
+  ChallDescription: {screen: ChallDescription},
+
 });
 
 export default App;
