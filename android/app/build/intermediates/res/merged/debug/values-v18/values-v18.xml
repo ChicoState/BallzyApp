@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <!-- From: file:/home/inderdeepsandhar/ChicoState/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v18/values-v18.xml -->
-=======
-    <!-- From: file:/home/brennan/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v18/values-v18.xml -->
->>>>>>> 3dcf1fd083387743e8b1521e100ff51f1e4b0a74
     <eat-comment/>
     <dimen name="abc_switch_padding">0px</dimen>
 </resources>

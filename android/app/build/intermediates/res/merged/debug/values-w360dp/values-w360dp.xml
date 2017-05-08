@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <!-- From: file:/home/inderdeepsandhar/ChicoState/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-w360dp/values-w360dp.xml -->
-=======
-    <!-- From: file:/home/brennan/BallzyApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-w360dp/values-w360dp.xml -->
->>>>>>> 3dcf1fd083387743e8b1521e100ff51f1e4b0a74
     <eat-comment/>
     <integer name="abc_max_action_buttons">3</integer>
 </resources>
