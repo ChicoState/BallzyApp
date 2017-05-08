@@ -106,11 +106,21 @@ class Challenges extends React.Component {
     this.state.description = state.params ? state.params.description : "";
     this.state.price = state.params ? state.params.price : "";
 
+
+
+    this.addChallenge();
+  }
+
+  componentWillMount() {
+  
     if(firebase.auth().currentUser != null) {
       this.state.uid = firebase.auth().currentUser.uid;
     }
+  }
 
-    if(this.state.uid == '') {
+  addChallenge() {
+
+    if(this.state.title !== '' && this.state.uid == '') {
       Alert.alert(
         'Warning',
         'You must log in to create challenges',
@@ -122,15 +132,8 @@ class Challenges extends React.Component {
         )
         // No user is signed in.
     }
-    else {
-      this.addChallenge();
-    }
 
-  }
-
-
-  addChallenge() {
-    if (this.state.title !== '' && this.state.description !== '') {
+    if (this.state.title !== '' && this.state.description !== '' && this.state.uid !== '' && this.state.price !== '') {
       this.itemsRef.push({
         title: this.state.title,
         description: this.state.description,
@@ -162,47 +165,6 @@ class Challenges extends React.Component {
     );
   }
 
-
-  /*_renderRow(rowData: string, sectionID: number, rowID: number,
-    highlightRow: (sectionID: number, rowID: number) => void) {
-      var rowHash = Math.abs(hashCode(rowData));
-      var imgSource = THUMB_URLS[rowHash % THUMB_URLS.length];
-      return (
-        <TouchableHighlight
-          onPress={() => { this._pressRow(rowID);
-            highlightRow(sectionID, rowID); }}
-        >
-        <View>
-          <View style={styles.row}>
-            <Image style={styles.thumb} source={imgSource} />
-              <Text style={styles.text}>
-                {rowData + ' - ' + LOREM_IPSUM.substr(0, rowHash % 301 + 10)}
-              </Text>
-          </View>
-        </View>
-        </TouchableHighlight>
-      );
-    }
-
-  pressRow(rowID: number) {
-    this.pressData[rowID] = !this.pressData[rowID];
-    this.setState({
-      chalSource: this.state.chalSource.cloneWithRows(this.items)
-    )}
-  }
-
-  renderSeparator(sectionID: number, rowID: number, adjacentRowHighlighted: bool) {
-    return (
-      <View key={`${sectionID}-${rowID}`}
-      style={{ height: adjacentRowHighlighted ? 4 : 1,
-        backgroundColor: adjacentRowHighlighted ? '#3B5998' : '#CCCCCC', }} />
-    );
-  }
-
-
-  componentWillMount() {
-    this.pressData = {};
-  }*/
 
   printChals() {
     return this.state.chalArr.map(function(chals, i){
