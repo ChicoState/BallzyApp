@@ -13,11 +13,9 @@ import Messaging from './components/chat/Messaging';
 import Signup from './components/rootlogin/Signup';
 import Settings from './components/settings/Settings';
 import picCam from './components/videos/piccamera';
-<<<<<<< HEAD
 import vidCam from './components/videos/vidCamera';
-=======
 import ChallDescription from './components/challenges/ChallengeDescription';
->>>>>>> 6f43370d927b84afbd63f8c8ff0f1250f505caf5
+
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
@@ -82,16 +80,12 @@ const App = StackNavigator ({
   Messaging: { screen: Messaging},
   Settings: {screen: Settings},
   picCamera: {screen: picCam},
-<<<<<<< HEAD
   vidCamera: {screen: vidCam},
-  New: {screen: New}
-=======
+  New: {screen: New},
   New: {screen: New},
   cardPayments: { screen: cardPayments },
   newPayments: { screen: newPayments },
   ChallDescription: {screen: ChallDescription},
-
->>>>>>> 6f43370d927b84afbd63f8c8ff0f1250f505caf5
 });
 
 export default App;

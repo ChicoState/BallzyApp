@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
     <!-- From: file:/home/inderdeepsandhar/ChicoState/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-be/values.xml -->
-=======
-    <!-- From: file:/home/etapia8/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-be/values.xml -->
->>>>>>> 6f43370d927b84afbd63f8c8ff0f1250f505caf5
     <eat-comment/>
     <string msgid="4770915072144378781" name="common_google_play_services_api_unavailable_text">"Для <ns1:g id="APP_NAME">%1$s</ns1:g> патрабуецца адна ці некалькі службаў Google Play, якія зараз недаступныя. Калі ласка, звярніцеся за дапамогай да распрацоўшчыка."</string>
     <string msgid="2050101795821476669" name="common_google_play_services_enable_button">"Уключыць службы Google Play"</string>
@@ -25,17 +21,10 @@
     <string msgid="8137798410446890929" name="common_google_play_services_restricted_profile_title">"Профiль з абмежаваннямі"</string>
     <string msgid="2431909537598981235" name="common_google_play_services_sign_in_failed_text">"Памылка пры ўваходзе ў пазначаны ўліковы запіс. Выберыце іншы ўліковы запіс."</string>
     <string msgid="4402642931312190213" name="common_google_play_services_sign_in_failed_title">"Не атрымалася ўвайсці ў сістэму"</string>
-<<<<<<< HEAD
     <!-- From: file:/home/inderdeepsandhar/ChicoState/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/res/values-be/values.xml -->
     <eat-comment/>
     <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"У праграмы <ns1:g id="APP_NAME">%1$s</ns1:g> ўзніклі праблемы са службамі Google Play. Калі праблема не знікае, звярніцеся за дапамогай да распрацоўшчыка."</string>
     <!-- From: file:/home/inderdeepsandhar/ChicoState/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-be/values.xml -->
-=======
-    <!-- From: file:/home/etapia8/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/res/values-be/values.xml -->
-    <eat-comment/>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"У праграмы <ns1:g id="APP_NAME">%1$s</ns1:g> ўзніклі праблемы са службамі Google Play. Калі праблема не знікае, звярніцеся за дапамогай да распрацоўшчыка."</string>
-    <!-- From: file:/home/etapia8/BallzyApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-be/values.xml -->
->>>>>>> 6f43370d927b84afbd63f8c8ff0f1250f505caf5
     <eat-comment/>
     <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> выкарыстоўвае службы Google Play, якія не падтрымліваюцца вашай прыладай. Звярніцеся за дапамогай да вытворцы."</string>
     <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Службы Google Play"</string>
