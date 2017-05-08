@@ -15,7 +15,6 @@ import {
 class Payments extends React.Component {
   static navigationOptions = {
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
-    title: 'Payments',
     tabBarIcon: () => (
       <Image
         source={require('../navigationbar/payments48x48.png')}
@@ -26,13 +25,13 @@ class Payments extends React.Component {
   render() {
     return(
       <View style={styles.container}>
-        <View style={{flex: 10}}>
+        <View>
           <Text style={styles.title}>Payments</Text>
-	        <Button title="Pay with Card" style={styles.button1}
-	           onPress={() => { Actions.cardPayments() }}>
+	        <Button title="Pay with Stored Card" style={styles.button1}
+	           onPress={() => {this.props.navigation.navigate('cardPayments')}}>
 	        </Button>
-	        <Button title="Pay with Stripe" style={styles.button2}
-	           onPress={() => { Actions.stripePayments() }}>
+	        <Button title="Add New Card" style={styles.button2}
+	           onPress={() => {this.props.navigation.navigate('newPayments')}}>
 	        </Button>
 	     </View>
       </View>
@@ -45,7 +44,7 @@ var styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'stretch',
-    backgroundColor: '#00BFFF'
+    backgroundColor: '#dcebfc'
   },
   button1: {
     marginTop: 20,

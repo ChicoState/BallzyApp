@@ -74,5 +74,25 @@ export default StyleSheet.create({
     backgroundColor: '#EFEFEF',
     height: 40,
     borderWidth: 0,
-  }
+  },
+  searchbutton: {
+    backgroundColor: '#4392f1',
+    flex: 1,
+    height: 38,
+    borderRadius: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  filterbutton: {
+    justifyContent: 'center',
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    height: 36,
+    width: 72,
+    borderRadius: 5,
+  },
+  filtertext: {
+    color: '#42033D',
+    fontSize: 15,
+  },
 });

@@ -3,7 +3,7 @@ import NavigationBar from '../navigationbar/NavigationBar';
 import firebase from 'firebase';
 import firebaseApp from '../../globals'
 import Firebase from 'firebase';
-
+import styles2 from '../../styles/mainstyle'
 import {
     View,
     Text,
@@ -106,11 +106,21 @@ class Challenges extends React.Component {
     this.state.description = state.params ? state.params.description : "";
     this.state.price = state.params ? state.params.price : "";
 
+
+    this.addChallenge();
+    
+  }
+
+  componentWillMount() {
+
     if(firebase.auth().currentUser != null) {
       this.state.uid = firebase.auth().currentUser.uid;
     }
+  }
 
-    if(this.state.uid == '') {
+  addChallenge() {
+
+    if(this.state.title !== '' && this.state.uid == '') {
       Alert.alert(
         'Warning',
         'You must log in to create challenges',
@@ -122,15 +132,8 @@ class Challenges extends React.Component {
         )
         // No user is signed in.
     }
-    else {
-      this.addChallenge();
-    }
 
-  }
-
-
-  addChallenge() {
-    if (this.state.title !== '' && this.state.description !== '') {
+    if (this.state.title !== '' && this.state.description !== '' && this.state.uid !== '' && this.state.price !== '') {
       this.itemsRef.push({
         title: this.state.title,
         description: this.state.description,
@@ -163,47 +166,6 @@ class Challenges extends React.Component {
   }
 
 
-  /*_renderRow(rowData: string, sectionID: number, rowID: number,
-    highlightRow: (sectionID: number, rowID: number) => void) {
-      var rowHash = Math.abs(hashCode(rowData));
-      var imgSource = THUMB_URLS[rowHash % THUMB_URLS.length];
-      return (
-        <TouchableHighlight
-          onPress={() => { this._pressRow(rowID);
-            highlightRow(sectionID, rowID); }}
-        >
-        <View>
-          <View style={styles.row}>
-            <Image style={styles.thumb} source={imgSource} />
-              <Text style={styles.text}>
-                {rowData + ' - ' + LOREM_IPSUM.substr(0, rowHash % 301 + 10)}
-              </Text>
-          </View>
-        </View>
-        </TouchableHighlight>
-      );
-    }
-
-  pressRow(rowID: number) {
-    this.pressData[rowID] = !this.pressData[rowID];
-    this.setState({
-      chalSource: this.state.chalSource.cloneWithRows(this.items)
-    )}
-  }
-
-  renderSeparator(sectionID: number, rowID: number, adjacentRowHighlighted: bool) {
-    return (
-      <View key={`${sectionID}-${rowID}`}
-      style={{ height: adjacentRowHighlighted ? 4 : 1,
-        backgroundColor: adjacentRowHighlighted ? '#3B5998' : '#CCCCCC', }} />
-    );
-  }
-
-
-  componentWillMount() {
-    this.pressData = {};
-  }*/
-
   printChals() {
     return this.state.chalArr.map(function(chals, i){
       return(
@@ -220,59 +182,67 @@ class Challenges extends React.Component {
 
 
   render() {
-
     return (
       <View style={styles.container}>
         <View style={{flex:10}}>
-          <TextInput
-            style={styles.titleInput}
-            placeholder='Search'
-            onChangeText={(text) => {
-                this.setState({
-                  search: text,
+          <View style={{borderColor: '#331832',borderBottomWidth:0, flexDirection: 'row', alignItems: 'center'}}>
+            <TextInput
+              underlineColorAndroid='transparent'
+              style={styles.SearchInput}
+              placeholder='Search'
+              onChangeText={(text) => {
+                  this.setState({
+                    search: text,
+                  });
+              }}
+              value={this.state.search}
+            />
+            <View style={{flex:.1}}/>
+            <TouchableOpacity
+              style={styles2.searchbutton}
+              onPress={() => {
+                Actions.new({
+                  search: this.state.search,
                 });
-            }}
-            value={this.state.search}
-          />
-
-
+              }}
+            >
+              <Image style={{width: 28, height: 28}} source={require('../../img/searchicon.png')}/>
+            </TouchableOpacity>
+            <View style={{flex:.3}}/>
+          </View>
+        <View style={{flex: .2, flexDirection: 'row', alignItems: 'center'}}>
+          <View style={{flex:.2}}/>
+          <View style={{flex: 9.4, flexDirection: 'row', alignItems: 'center'}}>
+            <TouchableOpacity
+              style={styles2.smllbutton}
+              onPress={() => {this.props.navigation.navigate('New')}}>
+              <Text style={styles.buttonText}>
+                Create
+              </Text>
+            </TouchableOpacity>
+            <View style={{flex: .04}}/>
+            <TouchableOpacity
+              style={styles.filterbutton}
+              onPress={() => {this.props.navigation.navigate('New')}}>
+              <Text style={styles.filtertext}>
+                Filter
+              </Text>
+            </TouchableOpacity>
+            <View style={{flex: .94}}/>
+          </View>
+          <View style={{flex:.3}}/>
+        </View>
         <ListView
           dataSource = {this.state.chalSource}
           renderRow = {this.renderRow.bind(this)}
         />
-
-
         <View style={{flex:0.5, flexDirection: 'row', justifyContent: 'space-between'}}>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            Actions.new({
-              search: this.state.search,
-            });
-          }}
-        >
-        <Text style={styles.buttonText}>
-          Search
-        </Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {this.props.navigation.navigate('New')}}>
-
-          <Text style={styles.buttonText}>
-            Create
-          </Text>
-        </TouchableOpacity>
         </View>
-
         </View>
       </View>
     );
   }
 }
-
-
 Challenges.propTypes = {
   chaltitle: React.PropTypes.string,
   description: React.PropTypes.string,
@@ -282,7 +252,7 @@ Challenges.propTypes = {
 var styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#00BFFF'
+    backgroundColor: '#dcebfc'
   },
   inputView: {
     paddingTop: 20,
@@ -311,15 +281,23 @@ var styles = StyleSheet.create({
     margin: 10,
     backgroundColor: 'white'
   },
-
+  SearchInput: {
+    borderRadius: 5,
+    padding: 5,
+    height: 40,
+    borderWidth: 0,
+    borderColor: 'black',
+    margin: 10,
+    backgroundColor: '#FFFFFF',
+    flex: 9
+  },
   buttonText: {
     alignSelf: 'center',
     textAlign: 'center',
     padding: 5,
-    fontSize: 20,
+    fontSize: 15,
     color: '#FFFFFF'
   },
-
   button: {
     alignSelf: 'center',
     borderWidth: 1,
@@ -329,7 +307,27 @@ var styles = StyleSheet.create({
     borderColor: '#7F8284',
     backgroundColor: '#AEB3B7',
     borderRadius: 10,
-  }
+  },
+    searchbutton: {
+    backgroundColor: '#4392f1',
+    flex: 1,
+    height: 38,
+    borderRadius: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  filterbutton: {
+    justifyContent: 'center',
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    height: 36,
+    width: 72,
+    borderRadius: 5,
+  },
+  filtertext: {
+    color: '#42033D',
+    fontSize: 15,
+  },
 });
 
 export default Challenges;

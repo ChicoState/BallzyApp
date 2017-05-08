@@ -52,7 +52,7 @@ class Users extends React.Component {
           <View style={styles.Content}>
             <ScrollableTabView
               renderTabBar={() => <DefaultTabBar />}
-              tabBarBackgroundColor= 'black'
+              tabBarBackgroundColor= '#4392F1'
               tabBarInactiveTextColor = 'white'
               tabBarActiveTextColor = 'white'
               tabBarUnderlineStyle = {{
@@ -75,12 +75,12 @@ export default Users;
 var styles = StyleSheet.create({
   UserInfo: {
     flex: 3.5,
-    backgroundColor: '#00BFFF',
+    backgroundColor: '#dcebfc',
     flexDirection: 'row'
   },
 
   NavigationButton: {
-    backgroundColor: '#121212',
+    backgroundColor: '#4392F1',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',

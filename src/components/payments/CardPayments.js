@@ -11,45 +11,31 @@ import {
   Actions
 } from 'react-native-router-flux';
 
-class CardPayments extends React.Component {
+class StripePayments extends React.Component {
   state={
-    cardNo: '',
-    cardExp: '',
-    cardCvc: '',
+    Login: '',
+    Password: '',
   };
   render() {
     return(
-    <View>
-      <Text style={styles.titleText}>Pay With Card</Text>
-      <TextInput
-	style={styles.input} 
-	placeholder='Card Number'
-	onChangeText={(text) =>{
-	this.setState({cardNo: text})}}
+    <View style = {styles.container}>
+      <Text style={styles.titleText}>Select Your Card</Text>
+      <TextInput 
+	    style={styles.input}
+	    placeholder='E-Mail'
+	    onChangeText={(text) =>{
+	    this.setState({Login: text})}}
       />
       <TextInput 
-	style={styles.input} 
-	placeholder='Expiration'
-	onChangeText={(text) =>{ 
-	this.setState({cardExp: text})}}
-      />
-      <TextInput 
-	style={styles.input} 
-	placeholder='CVC'
-	onChangeText={(text) =>{ 
-	this.setState({cardCvc: text})}}
+	    style={styles.input}
+	    placeholder='Password'
+	    onChangeText={(text) =>{
+	    this.setState({Password: text})}}
       />
         <TouchableOpacity
-          onPress={() => {
-            Actions.payments({
-              cardNo: this.state.cardNo,
-	          cardExp: this.state.cardExp,
-	          cardCvc: this.state.cardCvc
-            });
-          }}
-        >
+          onPress={() => {this.props.navigation.navigate('Payments')}}>
           <Text style={styles.buttonText}>
-            Submit
+            Login
           </Text>
         </TouchableOpacity>
      </View>
@@ -60,6 +46,11 @@ class CardPayments extends React.Component {
 
 
 var styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'stretch',
+    backgroundColor: '#00BFFF'
+  },
   titleText: {
     textAlign: 'center',
     marginTop: 75,
@@ -72,6 +63,7 @@ var styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: 'black',
     margin: 20,
+    backgroundColor: '#F7FFF7'
   },
   buttonText: {
     textAlign: 'center',
@@ -80,6 +72,7 @@ var styles = StyleSheet.create({
     margin: 20,
     marginLeft: 20,
     fontSize: 20,
+    backgroundColor: '#F7FFF7'
   },
 });
-export default CardPayments;
+export default StripePayments;

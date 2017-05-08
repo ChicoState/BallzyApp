@@ -21,11 +21,9 @@ class New extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
-          Title:
-        </Text>
+        <View style={styles.pricetitlearea}>
         <TextInput
-          style={styles.titleInput}
+          style={styles.titleinput}
           placeholder='Title'
           onChangeText={(text) => {
               this.setState({
@@ -34,18 +32,9 @@ class New extends React.Component {
             }}
             value={this.state.title}
         />
+        <View style={{flex:.3}}/>
         <TextInput
-          style={styles.titleInput}
-          placeholder='Description'
-          onChangeText={(text) => {
-              this.setState({
-                description: text,
-              });
-            }}
-            value={this.state.description}
-        />
-        <TextInput
-          style={styles.titleInput}
+          style={styles.priceinput}
           placeholder='Price'
           onChangeText={(text) => {
               this.setState({
@@ -54,24 +43,38 @@ class New extends React.Component {
             }}
             value={this.state.price}
         />
+        </View>
+        <Text style={{paddingLeft: 20, paddingTop:null, fontSize: 20}}>Description:</Text>
+        <TextInput
+          placeholder='add description .........'
+          style={styles.descriptionInput}
+          numberOfLines= {8}
+          maxLength= {352}
+          multiline={true}
+          textAlignVertical = {'top'}
+          onChangeText={(text) => {
+              this.setState({
+                description: text,
+              });
+            }}
+            value={this.state.description}
+        />
 
-        <TouchableOpacity
-        style={styles.button}
-        onPress={() => this.props.navigation.navigate('Challenges', {
-          chaltitle: this.state.title,
-          description: this.state.description,
-          price: this.state.price,
+        <View style={styles.buttonarea}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => this.props.navigation.navigate('Challenges', {
+              chaltitle: this.state.title,
+              description: this.state.description,
+              price: this.state.price,
 
-        })}>
+          })}>
+          <Text style={styles.buttonText}>
+            Post
+          </Text>
+          </TouchableOpacity>
+        </View>
 
-        <Text style={styles.buttonText}>
-          Create
-        </Text>
-        </TouchableOpacity>
-
-        <Text>
-
-        </Text>
 
       </View>
     );
@@ -90,29 +93,60 @@ var styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'stretch',
-    backgroundColor: '#00BFFF'
+    backgroundColor: '#dcebfc'
   },
   title: {
     marginTop: 20,
     marginLeft: 20,
     fontSize: 20,
   },
-  titleInput: {
+  pricetitlearea: {
     padding: 5,
     height: 40,
-    borderWidth: 2,
+    marginRight: 16,
+    marginLeft: 16,
+    marginTop: 20,
+    marginBottom: 10,
+    flexDirection: 'row'
+  },
+  buttonarea: {
+    padding: 5,
+    height: 40,
+    marginRight: 16,
+    marginLeft: 16,
+    marginTop: 20,
+    marginBottom: 10,
+    flexDirection: 'row'
+  },
+  titleinput: {
+    flex:7,
+    backgroundColor: 'white',
+    borderRadius: 5,
+    height: 40,
+  },
+  priceinput: {
+    flex:2.6,
+    backgroundColor: 'white',
+    borderRadius: 5,
+    height: 40,
+  },
+  descriptionInput: {
+    justifyContent:'flex-start',
+    alignItems: 'flex-start',
+    padding: 5,
+    marginLeft: 20,
+    marginRight: 20,
     borderColor: 'black',
-    margin: 20,
+    margin: 10,
+    borderRadius: 5,
     backgroundColor: 'white'
   },
   button: {
-
-    borderWidth: 1,
     borderRadius: 5,
     height: 40,
     width: 90,
     borderColor: '#7F8284',
-    backgroundColor: '#AEB3B7',
+    backgroundColor: '#4392f1',
     borderRadius: 10
   },
   buttonText: {
