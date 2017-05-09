@@ -17,12 +17,8 @@ import {
     Alert,
 } from 'react-native';
 
-import {
-  Actions,
-} from 'react-native-router-flux';
 
 //var Firebase = require('firebase');
-var superheroarray = ["Superman", "Batman", "Flash", "WonderWoman", "Green Lantern", "Cyborg"];
 
 class Challenges extends React.Component {
   static navigationOptions = {
@@ -108,7 +104,7 @@ class Challenges extends React.Component {
 
 
     this.addChallenge();
-    
+
   }
 
   componentWillMount() {
@@ -200,12 +196,10 @@ class Challenges extends React.Component {
             <View style={{flex:.1}}/>
             <TouchableOpacity
               style={styles2.searchbutton}
-              onPress={() => {
-                Actions.new({
-                  search: this.state.search,
-                });
-              }}
-            >
+              onPress={() => this.props.navigation.navigate('New', {
+                search: this.state.search,
+            })}>
+
               <Image style={{width: 28, height: 28}} source={require('../../img/searchicon.png')}/>
             </TouchableOpacity>
             <View style={{flex:.3}}/>

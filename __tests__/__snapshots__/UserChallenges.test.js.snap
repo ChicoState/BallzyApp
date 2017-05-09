@@ -1,0 +1,15 @@
+exports[`test renders correctly 1`] = `
+<View>
+  <View>
+    <RCTScrollView>
+      <View />
+    </RCTScrollView>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    UserChallenges
+  </Text>
+</View>
+`;

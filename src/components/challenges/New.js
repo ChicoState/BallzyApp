@@ -8,9 +8,6 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-import {
-  Actions,
-} from 'react-native-router-flux';
 
 class New extends React.Component {
   state = {
@@ -81,9 +78,6 @@ class New extends React.Component {
   }
 }
 
-New.defaultProps = {
-  name: 'sky-diving'
-};
 
 New.propTypes = {
   search: React.PropTypes.string,

@@ -1,0 +1,143 @@
+exports[`test renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "#dcebfc",
+      "flex": 1,
+    }
+  }>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 40,
+        "marginBottom": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 20,
+        "padding": 5,
+      }
+    }>
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Title"
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderRadius": 5,
+          "flex": 7,
+          "height": 40,
+        }
+      }
+      value="" />
+    <View
+      style={
+        Object {
+          "flex": 0.3,
+        }
+      } />
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Price"
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderRadius": 5,
+          "flex": 2.6,
+          "height": 40,
+        }
+      }
+      value="" />
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 20,
+        "paddingLeft": 20,
+        "paddingTop": null,
+      }
+    }>
+    Description:
+  </Text>
+  <TextInput
+    maxLength={352}
+    multiline={true}
+    numberOfLines={8}
+    onChangeText={[Function]}
+    placeholder="add description ........."
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "backgroundColor": "white",
+        "borderColor": "black",
+        "borderRadius": 5,
+        "justifyContent": "flex-start",
+        "margin": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "padding": 5,
+      }
+    }
+    textAlignVertical="top"
+    value="" />
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 40,
+        "marginBottom": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 20,
+        "padding": 5,
+      }
+    }>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#4392f1",
+          "borderColor": "#7F8284",
+          "borderRadius": 10,
+          "height": 40,
+          "opacity": 1,
+          "width": 90,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#FFFFFF",
+            "fontSize": 20,
+            "padding": 5,
+            "textAlign": "center",
+          }
+        }>
+        Post
+      </Text>
+    </View>
+  </View>
+</View>
+`;
