@@ -150,7 +150,7 @@ class Challenges extends React.Component {
         })}>
         <View>
           <View >
-            <Text style={styles.listText}>{rowData.text.title}</Text>
+            <Text style={styles.listText}>{rowData.text.title}           ${rowData.text.price}</Text>
           </View>
         </View>
       </TouchableHighlight>

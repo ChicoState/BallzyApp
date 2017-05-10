@@ -33,6 +33,7 @@ class UserChallenges extends Component {
       price: '',
       description: '',
       uid: '',
+      chalArr: [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],
       chalSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row1.guid != row2.guid}),
     };
 
@@ -61,12 +62,13 @@ class UserChallenges extends Component {
     });
 
 
+  }
+
+  componentWillMount() {
     if(firebase.auth().currentUser != null) {
       this.state.uid = firebase.auth().currentUser.uid;
     }
-
   }
-
 
   removeTodo(rowData) {
     this.itemsRef.child(rowData.id).remove();
@@ -85,15 +87,29 @@ class UserChallenges extends Component {
     );
   }
 
+  printChals() {
+    return this.state.chalArr.map(function(chals, i){
+      if(firebase.auth().currentUser.uid == chals.uid) {
+        return(
+          <View key={i}>
+            <Text>Title: {chals.title}</Text>
+            <View>
+
+            </View>
+            </View>
+        );
+      }
+    });
+  }
+
+
   render() {
     return (
       <View>
-        <ListView
-          dataSource = {this.state.chalSource}
-          renderRow = {this.renderRow.bind(this)}
-          />
+        <View>
+          {this.printChals()}
+        </View>
 
-          <Text>UserChallenges</Text>
 
       </View>
     );

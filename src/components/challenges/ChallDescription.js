@@ -118,7 +118,7 @@ class ChallDescription extends React.Component {
 
           <Text style={styles.challDesc}>Title: {this.state.challData.text.title}</Text>
           <Text style={styles.challDesc}>Description: {this.state.challData.text.description}</Text>
-          <Text style={styles.challDesc}>Price: {this.state.challData.text.price}</Text>
+          <Text style={styles.challDesc}>Reward: {this.state.challData.text.price}</Text>
 
           <TouchableOpacity
             style={styles.filterbutton}
@@ -127,7 +127,7 @@ class ChallDescription extends React.Component {
               Remove
             </Text>
           </TouchableOpacity>
-          
+
         </View>
       </View>
     );
