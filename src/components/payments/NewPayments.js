@@ -11,10 +11,9 @@ import {
   Actions
 } from 'react-native-router-flux';
 
-import {createCardToken} from './Stripe';
-
 class StripePayments extends React.Component {
   state={
+    CardNa: '',
     CardNo: '',
     CardMo: '',
     CardYr: '',
@@ -24,7 +23,13 @@ class StripePayments extends React.Component {
     return(
     <View style = {styles.container}>
       <Text style={styles.titleText}>New Card</Text>
-      <TextInput
+      <TextInput 
+	    style={styles.input}
+	    placeholder="Name for the Card"
+	    onChangeText={(text) =>{
+	    this.setState({CardNa: text})}}
+      />
+      <TextInput 
 	    style={styles.input}
 	    placeholder='Card Number'
 	    onChangeText={(text) =>{
@@ -36,13 +41,13 @@ class StripePayments extends React.Component {
 	    onChangeText={(text) =>{
 	    this.setState({CardMo: text})}}
       />
-      <TextInput
+      <TextInput 
 	    style={styles.input}
 	    placeholder='Expiration Year'
 	    onChangeText={(text) =>{
 	    this.setState({CardYr: text})}}
       />
-      <TextInput
+      <TextInput 
 	    style={styles.input}
 	    placeholder='Card CVC'
 	    onChangeText={(text) =>{
@@ -50,8 +55,7 @@ class StripePayments extends React.Component {
       />
         <TouchableOpacity
           onPress={() => {
-            const Token = createCardToken(this.state.CardNo, this.state.CardMo, this.state.CardYr, this.state.CardCvc);
-            this.props.navigation.navigate('Payments');
+            this.props.navigation.navigate('cardPayments', {cardNa: this.state.CardNa, CardNo: this.state.CardNo, CardMo: this.state.CardMo, CardYr: this.state.CardYr, CardCvc: this.state.CardCvc})
           }}
         >
           <Text style={styles.buttonText}>
@@ -73,8 +77,8 @@ var styles = StyleSheet.create({
   },
   titleText: {
     textAlign: 'center',
-    marginTop: 40,
-    marginBottom: 40,
+    marginTop: 75,
+    marginBottom: 75,
     fontSize: 40,
     fontWeight: 'bold',
   },
@@ -82,7 +86,7 @@ var styles = StyleSheet.create({
     height: 40,
     borderWidth: 2,
     borderColor: 'black',
-    margin: 20,
+    margin: 12,
     backgroundColor: '#F7FFF7'
   },
   buttonText: {
@@ -91,7 +95,7 @@ var styles = StyleSheet.create({
     borderWidth: 1,
     margin: 20,
     marginLeft: 20,
-    fontSize: 25,
+    fontSize: 20,
     backgroundColor: '#F7FFF7'
   },
 });
