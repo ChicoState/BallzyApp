@@ -54,6 +54,7 @@ export default StyleSheet.create({
     height: 36,
     width: 72,
     borderRadius: 5,
+    margin: 10,
   },
   buttontexttransparent: {
     color: '#5F6B61',

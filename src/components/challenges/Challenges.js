@@ -178,48 +178,31 @@ class Challenges extends React.Component {
       <View style={styles.container}>
         <View style={{flex:10}}>
           <View style={{borderColor: '#331832',borderBottomWidth:0, flexDirection: 'row', alignItems: 'center'}}>
-            <TextInput
-              underlineColorAndroid='transparent'
-              style={styles.SearchInput}
-              placeholder='Search'
-              onChangeText={(text) => {
-                  this.setState({
-                    search: text,
-                  });
-              }}
-              value={this.state.search}
-            />
-            <View style={{flex:.1}}/>
-            <TouchableOpacity
-              style={styles2.searchbutton}
-              onPress={() => this.props.navigation.navigate('New', {
-                search: this.state.search,
-            })}>
 
-              <Image style={{width: 28, height: 28}} source={require('../../img/searchicon.png')}/>
-            </TouchableOpacity>
+
+            <View style={{flex: 9.4, flexDirection: 'row', alignItems: 'center'}}>
+              <TouchableOpacity
+                style={styles2.smllbutton}
+                onPress={() => {this.props.navigation.navigate('New')}}>
+                <Text style={styles.buttonText}>
+                  Create
+                </Text>
+              </TouchableOpacity>
+              <View style={{flex: .04}}/>
+              <TouchableOpacity
+                style={styles.filterbutton}
+                onPress={() => {this.props.navigation.navigate('New')}}>
+                <Text style={styles.filtertext}>
+                  Filter
+                </Text>
+              </TouchableOpacity>
+              <View style={{flex: .94}}/>
+            </View>
             <View style={{flex:.3}}/>
           </View>
         <View style={{flex: .2, flexDirection: 'row', alignItems: 'center'}}>
           <View style={{flex:.2}}/>
-          <View style={{flex: 9.4, flexDirection: 'row', alignItems: 'center'}}>
-            <TouchableOpacity
-              style={styles2.smllbutton}
-              onPress={() => {this.props.navigation.navigate('New')}}>
-              <Text style={styles.buttonText}>
-                Create
-              </Text>
-            </TouchableOpacity>
-            <View style={{flex: .04}}/>
-            <TouchableOpacity
-              style={styles.filterbutton}
-              onPress={() => {this.props.navigation.navigate('New')}}>
-              <Text style={styles.filtertext}>
-                Filter
-              </Text>
-            </TouchableOpacity>
-            <View style={{flex: .94}}/>
-          </View>
+
           <View style={{flex:.3}}/>
         </View>
         <View>
@@ -315,6 +298,7 @@ var styles = StyleSheet.create({
     height: 36,
     width: 72,
     borderRadius: 5,
+    margin: 10,
   },
   filtertext: {
     color: '#42033D',

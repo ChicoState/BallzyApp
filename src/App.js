@@ -74,8 +74,8 @@ const MainApp = TabNavigator (
 })
 
 const App = StackNavigator ({
- // Login: { screen: Login },
- // Signup: { screen: Signup },
+  Login: { screen: Login },
+  Signup: { screen: Signup },
   Mainapp: { screen: MainApp },
   Messaging: { screen: Messaging},
   Settings: {screen: Settings},
