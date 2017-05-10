@@ -77,6 +77,17 @@ class ChallDescription extends React.Component {
     if(this.state.uid == rowData.text.uid) {
       this.itemsRef.child(rowData.id).remove();
     }
+    else if(this.state.uid != rowData.text.uid){
+      Alert.alert(
+        'Warning',
+        'You do not own this challenge and cannot remove it',
+        [
+          {text: 'Cancel', onPress: () => console.log(''), style: ''},
+          {text: 'OK', onPress: () => console.log('')},
+        ],
+          { cancelable: true }
+        )
+    }
     else {
       Alert.alert(
         'Warning',
@@ -88,7 +99,6 @@ class ChallDescription extends React.Component {
           { cancelable: true }
         )
     }
-
   }
 
 
