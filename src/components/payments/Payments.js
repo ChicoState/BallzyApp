@@ -1,11 +1,13 @@
 import React from 'react';
-import NavigationBar from '../navigationbar/NavigationBar';
+
+
 import {
   Text,
   StyleSheet,
   View,
   Button,
   Image,
+  TouchableOpacity,
 } from 'react-native';
 
 import {
@@ -27,12 +29,15 @@ class Payments extends React.Component {
       <View style={styles.container}>
         <View>
           <Text style={styles.title}>Payments</Text>
-	        <Button title="Pay with Stored Card" style={styles.button1}
+          <TouchableOpacity style={styles.smllbutton}
 	           onPress={() => {this.props.navigation.navigate('cardPayments')}}>
-	        </Button>
-	        <Button title="Add New Card" style={styles.button2}
+             <Text style={styles.buttonText}>Pay with Stored Card</Text>
+	        </TouchableOpacity>
+
+	        <TouchableOpacity style={styles.smllbutton}
 	           onPress={() => {this.props.navigation.navigate('newPayments')}}>
-	        </Button>
+             <Text style={styles.buttonText}>Add New Card</Text>
+	        </TouchableOpacity>
 	     </View>
       </View>
     );
@@ -43,23 +48,39 @@ var styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'stretch',
+    alignItems: 'center',
     backgroundColor: '#dcebfc'
   },
   button1: {
     marginTop: 20,
     marginLeft: 20,
-    fontSize: 20,
+    fontSize: 25,
   },
   button2: {
     marginTop: 40,
     marginLeft: 20,
-    fontSize: 20,
+    fontSize: 25,
   },
   title: {
     textAlign: 'center',
     fontSize: 40,
     fontWeight: 'bold',
+  },
+  buttonText: {
+    alignSelf: 'center',
+    textAlign: 'center',
+    padding: 5,
+    fontSize: 15,
+    color: '#FFFFFF',
+  },
+  smllbutton: {
+    margin: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor:'#4392f1',
+    height: 45,
+    width: 150,
+    borderRadius: 5,
   },
 });
 export default Payments;

@@ -24,25 +24,25 @@ class StripePayments extends React.Component {
     return(
     <View style = {styles.container}>
       <Text style={styles.titleText}>New Card</Text>
-      <TextInput 
+      <TextInput
 	    style={styles.input}
 	    placeholder='Card Number'
 	    onChangeText={(text) =>{
 	    this.setState({CardNo: text})}}
       />
-      <TextInput 
+      <TextInput
 	    style={styles.input}
 	    placeholder='Expiration Month'
 	    onChangeText={(text) =>{
 	    this.setState({CardMo: text})}}
       />
-      <TextInput 
+      <TextInput
 	    style={styles.input}
 	    placeholder='Expiration Year'
 	    onChangeText={(text) =>{
 	    this.setState({CardYr: text})}}
       />
-      <TextInput 
+      <TextInput
 	    style={styles.input}
 	    placeholder='Card CVC'
 	    onChangeText={(text) =>{
@@ -73,8 +73,8 @@ var styles = StyleSheet.create({
   },
   titleText: {
     textAlign: 'center',
-    marginTop: 75,
-    marginBottom: 75,
+    marginTop: 40,
+    marginBottom: 40,
     fontSize: 40,
     fontWeight: 'bold',
   },
@@ -91,7 +91,7 @@ var styles = StyleSheet.create({
     borderWidth: 1,
     margin: 20,
     marginLeft: 20,
-    fontSize: 20,
+    fontSize: 25,
     backgroundColor: '#F7FFF7'
   },
 });
