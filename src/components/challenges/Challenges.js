@@ -4,6 +4,7 @@ import firebase from 'firebase';
 import firebaseApp from '../../globals'
 import Firebase from 'firebase';
 import styles2 from '../../styles/mainstyle'
+
 import {
     View,
     Text,
@@ -18,7 +19,6 @@ import {
 } from 'react-native';
 
 
-//var Firebase = require('firebase');
 
 class Challenges extends React.Component {
   static navigationOptions = {
@@ -137,17 +137,20 @@ class Challenges extends React.Component {
     }
   }
 
-  removeTodo(rowData) {
+  removeChal(rowData) {
     this.itemsRef.child(rowData.id).remove();
   }
 
   renderRow(rowData) {
     return(
       <TouchableHighlight
-        onPress={() => this.removeTodo(rowData)}>
+
+        onPress={() => this.props.navigation.navigate('ChallDescription', {
+          challData: rowData
+        })}>
         <View>
-          <View style={styles.row}>
-            <Text style={styles.todoText}>{rowData.text.title}</Text>
+          <View >
+            <Text style={styles.listText}>{rowData.text.title}</Text>
           </View>
         </View>
       </TouchableHighlight>
@@ -230,11 +233,7 @@ class Challenges extends React.Component {
     );
   }
 }
-Challenges.propTypes = {
-  chaltitle: React.PropTypes.string,
-  description: React.PropTypes.string,
-  price: React.PropTypes.string,
-};
+
 
 var styles = StyleSheet.create({
   container: {
@@ -284,6 +283,10 @@ var styles = StyleSheet.create({
     padding: 5,
     fontSize: 15,
     color: '#FFFFFF'
+  },
+  listText: {
+    paddingTop: 5,
+    fontSize: 25,
   },
   button: {
     alignSelf: 'center',

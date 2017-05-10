@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationBar from '../navigationbar/NavigationBar';
+
 import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
 import Posts from './Posts';
 import UserChallenges from './UserChallenges';

@@ -14,7 +14,7 @@ import Signup from './components/rootlogin/Signup';
 import Settings from './components/settings/Settings';
 import picCam from './components/videos/piccamera';
 import vidCam from './components/videos/vidCamera';
-import ChallDescription from './components/challenges/ChallengeDescription';
+import ChallDescription from './components/challenges/ChallDescription';
 
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
