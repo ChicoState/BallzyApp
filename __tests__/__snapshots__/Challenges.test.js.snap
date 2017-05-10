@@ -1,0 +1,230 @@
+exports[`test renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#dcebfc",
+      "flex": 1,
+    }
+  }>
+  <View
+    style={
+      Object {
+        "flex": 10,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 0,
+          "borderColor": "#331832",
+          "flexDirection": "row",
+        }
+      }>
+      <TextInput
+        onChangeText={[Function]}
+        placeholder="Search"
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "black",
+            "borderRadius": 5,
+            "borderWidth": 0,
+            "flex": 9,
+            "height": 40,
+            "margin": 10,
+            "padding": 5,
+          }
+        }
+        underlineColorAndroid="transparent"
+        value={undefined} />
+      <View
+        style={
+          Object {
+            "flex": 0.1,
+          }
+        } />
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#4392f1",
+            "borderRadius": 5,
+            "flex": 1,
+            "height": 38,
+            "justifyContent": "center",
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}>
+        <Image
+          source={1}
+          style={
+            Object {
+              "height": 28,
+              "width": 28,
+            }
+          } />
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 0.3,
+          }
+        } />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 0.2,
+          "flexDirection": "row",
+        }
+      }>
+      <View
+        style={
+          Object {
+            "flex": 0.2,
+          }
+        } />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 9.4,
+            "flexDirection": "row",
+          }
+        }>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#4392f1",
+              "borderRadius": 5,
+              "height": 36,
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": 72,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "padding": 5,
+                "textAlign": "center",
+              }
+            }>
+            Create
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 0.04,
+            }
+          } />
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 5,
+              "height": 36,
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": 72,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#42033D",
+                "fontSize": 15,
+              }
+            }>
+            Filter
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 0.94,
+            }
+          } />
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 0.3,
+          }
+        } />
+    </View>
+    <View>
+      <RCTScrollView>
+        <View />
+      </RCTScrollView>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 0.5,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      } />
+  </View>
+</View>
+`;

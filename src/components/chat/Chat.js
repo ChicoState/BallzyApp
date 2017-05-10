@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationBar from '../navigationbar/NavigationBar';
+
 import {
   Text,
   View,
@@ -9,9 +9,6 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-import{
-  Actions,
-  } from 'react-native-router-flux';
 
 //import Messaging from './Messaging';
 

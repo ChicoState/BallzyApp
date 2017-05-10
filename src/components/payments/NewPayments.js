@@ -7,9 +7,6 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import {
-  Actions
-} from 'react-native-router-flux';
 
 class StripePayments extends React.Component {
   state={
@@ -23,13 +20,13 @@ class StripePayments extends React.Component {
     return(
     <View style = {styles.container}>
       <Text style={styles.titleText}>New Card</Text>
-      <TextInput 
+      <TextInput
 	    style={styles.input}
 	    placeholder="Name for the Card"
 	    onChangeText={(text) =>{
 	    this.setState({CardNa: text})}}
       />
-      <TextInput 
+      <TextInput
 	    style={styles.input}
 	    placeholder='Card Number'
 	    onChangeText={(text) =>{
@@ -41,13 +38,13 @@ class StripePayments extends React.Component {
 	    onChangeText={(text) =>{
 	    this.setState({CardMo: text})}}
       />
-      <TextInput 
+      <TextInput
 	    style={styles.input}
 	    placeholder='Expiration Year'
 	    onChangeText={(text) =>{
 	    this.setState({CardYr: text})}}
       />
-      <TextInput 
+      <TextInput
 	    style={styles.input}
 	    placeholder='Card CVC'
 	    onChangeText={(text) =>{

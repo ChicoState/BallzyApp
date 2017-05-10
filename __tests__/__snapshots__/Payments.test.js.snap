@@ -1,0 +1,115 @@
+exports[`test renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#dcebfc",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontSize": 40,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }>
+      Payments
+    </Text>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4392f1",
+          "borderRadius": 5,
+          "height": 45,
+          "justifyContent": "center",
+          "margin": 15,
+          "opacity": 1,
+          "width": 150,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#FFFFFF",
+            "fontSize": 15,
+            "padding": 5,
+            "textAlign": "center",
+          }
+        }>
+        Pay with Stored Card
+      </Text>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4392f1",
+          "borderRadius": 5,
+          "height": 45,
+          "justifyContent": "center",
+          "margin": 15,
+          "opacity": 1,
+          "width": 150,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#FFFFFF",
+            "fontSize": 15,
+            "padding": 5,
+            "textAlign": "center",
+          }
+        }>
+        Add New Card
+      </Text>
+    </View>
+  </View>
+</View>
+`;
