@@ -222,10 +222,12 @@ class Challenges extends React.Component {
           </View>
           <View style={{flex:.3}}/>
         </View>
-        <ListView
-          dataSource = {this.state.chalSource}
-          renderRow = {this.renderRow.bind(this)}
-        />
+        <View>
+          <ListView
+            dataSource = {this.state.chalSource}
+            renderRow = {this.renderRow.bind(this)}
+            />
+        </View>
         <View style={{flex:0.5, flexDirection: 'row', justifyContent: 'space-between'}}>
         </View>
         </View>
