@@ -24,17 +24,6 @@ class Chat extends React.Component {
       />
     ),
   };
-  /*constructor(props) {
-    super(props);
-    this.state = {
-      username: '',
-      connectLabel: 'CONNECT',
-      buttonDisabled: true,
-      errorMessage: ''
-    };
-    this._onPressOpenChannel = this._onPressOpenChannel.bind(this);
-  }
-  */
 
   state = {
     name: '',
@@ -68,33 +57,32 @@ class Chat extends React.Component {
     );
   }
 
-
-  /*_onPressOpenChannel(){
-    this.props.navigator.push({name: 'Channels'});
-  }*/
 }
 //this a custom prop
 var styles = StyleSheet.create( {
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'stretch',
-    backgroundColor: '#dcebfc'
+    alignItems: 'center',
+    backgroundColor: '#dcebfc',
   },
   loginContainer: {
-    flex: 10,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    height: 270,
+    width: 300,
+    backgroundColor: '#42033D',
+    borderColor: '#ffe500',
+    borderWidth: 3,
+    borderRadius: 5,
   },
   title: {
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 20,
     fontWeight: '600',
+    color: 'white',
     width: 250,
-    backgroundColor: '#FFFF31',
-    borderWidth: 1,
-    borderRadius: 5,
   },
   nameInput: {
     padding: 5,

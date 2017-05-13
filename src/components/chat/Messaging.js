@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { GiftedChat } from 'react-native-gifted-chat';
+import { GiftedChat, Bubble} from 'react-native-gifted-chat';
 import Backend from './Backend';
 import{
   View,
@@ -8,12 +8,34 @@ import{
 } from 'react-native';
 
 export default class Messaging extends Component{
+  constructor(props){
+    super(props);
+    this.state=  {
+      messages:[],
+    }
+    this.renderBubble = this.renderBubble.bind(this);
+  }
+  /*
   state = {
     messages: [],
   }
+  */
   componentWillMount() {
 
   }
+  renderBubble(props) {
+    return (
+      <Bubble
+        {...props}
+        wrapperStyle={{
+          left: {
+            backgroundColor: '#f0f0f0',
+          }
+        }}
+        />
+    );
+  }
+
   render() {
     return (
       <GiftedChat
@@ -25,6 +47,7 @@ export default class Messaging extends Component{
           _id: Backend.getUid(),
           name: this.props.name,
         }}
+        renderBubble={this.renderBubble}
       />
     );
   }
@@ -44,7 +67,7 @@ export default class Messaging extends Component{
 }
 
 Messaging.defaultProps = {
-  name: 'John',
+  name: 'Carlos',
 };
 Messaging.propTypes = {
   name: React.PropTypes.string,
