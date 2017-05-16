@@ -12,14 +12,15 @@ export default class Messaging extends Component{
     super(props);
     this.state=  {
       messages:[],
+      name: '',
     }
     this.renderBubble = this.renderBubble.bind(this);
+
+    //this takes in the parameter passed in from chat screen for username
+    //and sets this components prop for name to it
+    this.state.name = this.props.navigation.state.params.name;
   }
-  /*
-  state = {
-    messages: [],
-  }
-  */
+
   componentWillMount() {
 
   }
@@ -42,10 +43,11 @@ export default class Messaging extends Component{
         messages={this.state.messages}
         onSend={(message) => {
           Backend.sendMessage(message);
-        }}
+        }
+        }
         user={{
           _id: Backend.getUid(),
-          name: this.props.name,
+          name: this.state.name,
         }}
         renderBubble={this.renderBubble}
       />
@@ -65,13 +67,6 @@ export default class Messaging extends Component{
   }
 
 }
-
-Messaging.defaultProps = {
-  name: 'Carlos',
-};
-Messaging.propTypes = {
-  name: React.PropTypes.string,
-};
 
 var styles = StyleSheet.create({
   container: {
