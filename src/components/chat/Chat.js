@@ -42,11 +42,11 @@ class Chat extends React.Component {
             style = {styles.nameInput}
             placeholder='ex: jdoe530'
             onChangeText={ (text) => { this.setState({name: text}); } }
-            value = {this.state.name}
+            //value = {this.state.name}
           />
           <TouchableOpacity
             style = {styles.button}
-            onPress = {() => this.props.navigation.navigate('Messaging')}
+            onPress = {() => this.props.navigation.navigate('Messaging', {name: this.state.name})}
           >
             <Text style = {styles.buttonText}>
               Next
