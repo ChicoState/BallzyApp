@@ -8,16 +8,10 @@ class Backend {
 
   uid = '';
   messagesRef = null;
+
   //initialize Firebase Backend
   //the database already initialized in globals.js
   constructor() {
-    /*firebase.initializeApp({
-      apiKey: 'AIzaSyBxccEYYuv1ivbKfPN_Tbguh8fKe4uz2lg',
-      authDomain: 'ballzyapp-7aba2.firebaseapp.com',
-      databaseURL: 'https://ballzyapp-7aba2.firebaseio.com/',
-      storageBucket: 'ballzyapp-7aba2.appspot.com',
-    });
-    */
     firebaseApp.auth().onAuthStateChanged((user) => {
       if(user) {
         this.setUid(user.uid);
@@ -27,38 +21,19 @@ class Backend {
         });
       }
     });
-
-
-
-    /*this.state = {
-      newChallenge: '',
-      email: '',
-      pass: '',
-      title: '',
-      price: '',
-      description: '',
-      chalArr: [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],
-      //todoSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row !=row2})
-    };
-
-    this.items = [];
-    this.tempChallArray = [];
-
-    const ds = new ListView.DataSource({rowHasChanged:(r1,r2) => r1 !== r2});
-    this.state = {
-      dataSource: ds.cloneWithRows(['row 1', 'row 2']),
-    };
-    */
-
-
-
   }
+
+  //setUID sets the user id value for the authenticated user
   setUid(value) {
     this.uid = value;
   }
+
+  //getUID returns the user id from the authentication list
   getUid() {
     return this.uid;
   }
+
+  //loadMessages loads old messages from the database
   loadMessages(callback) {
     this.messagesRef = firebaseApp.database().ref('messages');
     this.messagesRef.off();
@@ -77,6 +52,7 @@ class Backend {
     this.messagesRef.limitToLast(20).on('child_added', onReceive);
   }
 
+  //sendMessage sends a message to the global chat
   sendMessage(message) {
     for(let i = 0; i < message.length; i++) {
       this.messagesRef.push({
@@ -92,24 +68,6 @@ class Backend {
       this.messagesRef.off();
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 export default new Backend();
