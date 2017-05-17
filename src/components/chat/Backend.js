@@ -49,6 +49,7 @@ class Backend {
         },
       });
     };
+    //the child_added event updates messages rendered and calls onReceive
     this.messagesRef.limitToLast(20).on('child_added', onReceive);
   }
 
