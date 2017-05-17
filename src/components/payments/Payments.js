@@ -12,6 +12,16 @@ import {
 
 
 class Payments extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state={
+      CardNa: '',
+      CardNo: '',
+      CardMo: '',
+      CardYr: '',
+      CardCvc: ''
+    };
+  }
   static navigationOptions = {
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
     tabBarIcon: () => (
@@ -27,10 +37,18 @@ class Payments extends React.Component {
         <View>
           <Text style={styles.title}>Payments</Text>
           <TouchableOpacity style={styles.smllbutton}
-	           onPress={() => {this.props.navigation.navigate('cardPayments')}}>
-             <Text style={styles.buttonText}>Pay with Stored Card</Text>
-	        </TouchableOpacity>
-
+	        onPress={() => {this.props.navigation.navigate('cardPayments'
+	          , {
+              CardNa: this.state.CardNa,
+              CardNo: this.state.CardNo,
+              CardMo: this.state.CardMo,
+              CardYr: this.state.CardYr,
+              CardCvc: this.state.CardCvc
+            }
+            )}}
+          >
+          <Text style={styles.buttonText}>Pay with Stored Card</Text>
+	      </TouchableOpacity>
 	        <TouchableOpacity style={styles.smllbutton}
 	           onPress={() => {this.props.navigation.navigate('newPayments')}}>
              <Text style={styles.buttonText}>Add New Card</Text>
