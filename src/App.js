@@ -9,6 +9,7 @@ import Videos from './components/videos/Videos';
 import Users from './components/users/Users';
 import Login from './components/rootlogin/Login';
 import Chat from './components/chat/Chat';
+import Channels from './components/chat/Channels';
 import Messaging from './components/chat/Messaging';
 import Signup from './components/rootlogin/Signup';
 import Settings from './components/settings/Settings';
@@ -37,7 +38,8 @@ import {
 const MainApp = TabNavigator (
   {
     Challenges: { screen: Challenges },
-    Chat: { screen: Chat },
+    //Chat: { screen: Chat },
+    Channels: {screen: Channels},
     Videos: { screen: Videos },
     Payments: { screen: Payments },
     Users: { screen: Users },
@@ -77,6 +79,7 @@ const App = StackNavigator ({
   Login: { screen: Login },
   Signup: { screen: Signup },
   Mainapp: { screen: MainApp },
+  Chat: {screen: Chat},
   Messaging: { screen: Messaging},
   Settings: {screen: Settings},
   picCamera: {screen: picCam},
