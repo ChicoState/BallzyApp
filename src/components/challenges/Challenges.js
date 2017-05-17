@@ -53,8 +53,6 @@ class Challenges extends React.Component {
       price: '',
       description: '',
       uid: '',
-      pressData: ({}: {[key: number]: boolean}),
-      chalArr: [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],
       chalSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row1.guid != row2.guid}),
     };
 
@@ -102,6 +100,13 @@ class Challenges extends React.Component {
 
   componentWillMount() {
 
+    this.itemsRef.on('child_removed', (dataSnapshot) => {
+      this.items = this.items.filter((x) => x.id !== dataSnapshot.key);
+      this.setState({
+        chalSource: this.state.chalSource.cloneWithRows(this.items)
+      })
+    });
+    
     if(firebase.auth().currentUser != null) {
       this.state.uid = firebase.auth().currentUser.uid;
     }

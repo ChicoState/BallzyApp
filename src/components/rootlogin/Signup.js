@@ -22,13 +22,77 @@ export default class Signup extends Component {
   }
   constructor(props) {
     super(props);
+
     this.title = "Sign up:";
+
+    const myFirebaseRef = firebaseApp.database().ref('UserList');
+
+    this.itemsRef = myFirebaseRef.child('Users');
+
     this.state = {
+      first: '',
+      last: '',
       email: '',
       password: '',
+      uid: '',
+      userName: '',
       loading: false,
-    }
+      //userSource: new ListView.DataSource({rowHasChanged: (row1, row2) => row1.guid != row2.guid}),
+    };
+
+    this.items = [];
+    this.tempChallArray = [];
+
   }
+
+  componentDidMount() {
+    this.itemsRef.on('child_added', (dataSnapshot) => {
+      this.items.push({id: dataSnapshot.key, text: dataSnapshot.val()});
+      //this.setState({
+      //  userSource: this.state.userSource.cloneWithRows(this.items)
+      //})
+    });
+
+    this.itemsRef.on("value", (allChallSnapshot) => {
+      allChallSnapshot.forEach((challengeSnapshot) => {
+        var chall = challengeSnapshot.val();
+        this.tempChallArray.push(chall);
+      });
+      this.setState({
+        chalArr: this.tempChallArray
+      });
+    });
+
+    this.itemsRef.on('child_removed', (dataSnapshot) => {
+      this.items = this.items.filter((x) => x.id !== dataSnapshot.key);
+      //this.setState({
+        //userSource: this.state.userSource.cloneWithRows(this.items)
+      //})
+    });
+
+  }
+
+
+  login() {
+    this.setState({
+      loading: true
+    });
+    firebaseApp.auth().signInWithEmailAndPassword(this.state.email, this.state.password
+    ).then((userData) => {
+        this.setState({
+          loading: false
+        });
+        AsyncStorage.setItem('userData', JSON.stringify(userData));
+        this.props.navigation.navigate("Mainapp");
+      }
+    ).catch((error) => {
+      this.setState({
+        loading: false
+      });
+      alert('Login Failed. Please try again'+ error);
+      });
+  }
+
   signup() {
     this.setState({
       // When waiting for the firebase server show the loading indicator.
@@ -38,9 +102,21 @@ export default class Signup extends Component {
       this.state.email,
       this.state.password).then(() => {
         alert('Your account was created!');
+        this.login();
+        this.state.uid = firebaseApp.auth().currentUser.uid;
+        this.itemsRef.push({
+          email: this.state.email,
+          userName: this.state.userName,
+          first: this.state.first,
+          last: this.state.last,
+          uid: this.state.uid
+        });
         this.setState({
           email: '',
           password: '',
+          first: '',
+          last: '',
+          userName: '',
           loading: false
         });
     }).catch((error) => {
@@ -79,8 +155,28 @@ export default class Signup extends Component {
                   style={styles.btextinput}
                   onChangeText={(text) => this.setState({password: text})}
                   value={this.state.password}
-                  secureTextEntry={true}
                   placeholder={"Password"}
+                />
+                <View style={{flex: .5}}/>
+                <TextInput
+                  style={styles.btextinput}
+                  onChangeText={(text) => this.setState({first: text})}
+                  value={this.state.first}
+                  placeholder={"First Name"}
+                />
+                <View style={{flex: .5}}/>
+                <TextInput
+                  style={styles.btextinput}
+                  onChangeText={(text) => this.setState({last: text})}
+                  value={this.state.last}
+                  placeholder={"Last Name"}
+                />
+                <View style={{flex: .5}}/>
+                <TextInput
+                  style={styles.btextinput}
+                  onChangeText={(text) => this.setState({userName: text})}
+                  value={this.state.userName}
+                  placeholder={"Username"}
                 />
                 <View style={{flex: 9.5, flexDirection: 'column',
                               justifyContent: 'center'}}>
