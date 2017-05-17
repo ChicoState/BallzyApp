@@ -8,6 +8,7 @@ import{
   Text,
   StyleSheet,
   TouchableOpacity,
+  TouchableHighlight,
   ListView,
   Image
 } from 'react-native';
@@ -62,10 +63,13 @@ componentDidMount() {
 }
 renderRow(rowData){
       return(
+        <TouchableHighlight
+          onPress={() => this.props.navigation.navigate('Messaging: ')}>
           <View style={styles.profileContainer}>
               <Image source={{ uri: 'https://www.gravatar.com/avatar/' + md5(rowData.email) }} style={styles.profileImage}/>
               <Text style={styles.profileName}>{rowData.name}</Text>
           </View>
+        </TouchableHighlight>
       );
   }
 
