@@ -30,33 +30,36 @@ export default class Channels extends Component{
             dataSource: new ListView.DataSource({
                 rowHasChanged: (row1, row2) => row1 !== row2,
             }),
-            loading: true
+            loading: true,
         };
-        const myFirebaseRef = firebaseApp.database().ref('users');
-        this.friendsRef = myFirebaseRef.child('friends');
+        this.myDatabase = firebaseApp.database().ref();
+        this.friendsRef= this.myDatabase.child('users');
+        this.key='';
         this.items=[];
   }
 
-  listenForItems(friendsRef) {
-    //var user = firebase.auth().currentUser;
-    friendsRef.on("value", (dataSnapshot) => {
+  listenForItems() {
+    var user = firebaseApp.auth().currentUser;
+    this.friendsRef.on("value", (dataSnapshot) => {
       dataSnapshot.forEach((child) => {
-        this.items.push({
-          name:child.val().name,
-          email:child.val().email,
-          uid:child.val().uid
-        });
+        if(child.val().email != user.email)
+          this.items.push({
+            name:child.val().name,
+            email:child.val().email,
+            uid:child.val().uid
+          });
       });
+
       this.setState({
         dataSource: this.state.dataSource.cloneWithRows(this.items),
         loading: false
       });
     });
+
 }
 componentDidMount() {
-    this.listenForItems(this.friendsRef);
+    this.listenForItems();
 }
-
 renderRow(rowData){
       return(
           <View style={styles.profileContainer}>
@@ -65,6 +68,7 @@ renderRow(rowData){
           </View>
       );
   }
+
   render() {
       return (
           <View style={styles.container}>
@@ -77,6 +81,9 @@ renderRow(rowData){
                   <ListView
                     dataSource={this.state.dataSource}
                     renderRow={this.renderRow.bind(this)}/>
+                    <Text style={styles.myFriends}>
+                      {this.num}   {this.key}
+                    </Text>
           </View>
       );
   }
