@@ -64,7 +64,7 @@ componentDidMount() {
 renderRow(rowData){
       return(
         <TouchableHighlight
-          onPress={() => this.props.navigation.navigate('Messaging: ')}>
+          onPress={() => this.props.navigation.navigate('Chat')}>
           <View style={styles.profileContainer}>
               <Image source={{ uri: 'https://www.gravatar.com/avatar/' + md5(rowData.email) }} style={styles.profileImage}/>
               <Text style={styles.profileName}>{rowData.name}</Text>
