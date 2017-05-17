@@ -6,7 +6,8 @@ import Payments from './components/payments/Payments';
 import cardPayments from './components/payments/CardPayments';
 import newPayments from './components/payments/NewPayments';
 import Videos from './components/videos/Videos';
-import Users from './components/users/Users';
+import User from './components/users/Users';
+import Users from './components/users/userList';
 import Login from './components/rootlogin/Login';
 import Chat from './components/chat/Chat';
 import Channels from './components/chat/Channels';
@@ -89,6 +90,7 @@ const App = StackNavigator ({
   cardPayments: { screen: cardPayments },
   newPayments: { screen: newPayments },
   ChallDescription: {screen: ChallDescription},
+  User: {screen: User},
 });
 
 export default App;
