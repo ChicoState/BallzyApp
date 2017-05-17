@@ -6,38 +6,50 @@ import {
   TextInput,
   View,
   TouchableOpacity,
+  ListView,
+  listView
 } from 'react-native';
 
 
 import {createCardToken} from './Stripe';
 
 class StripePayments extends React.Component {
-  state={
-    CardNa: 'Master Card',
-    CardNo: '',
-    CardMo: '',
-    CardYr: '',
-    CardCvc: ''
-  };
+  constructor(props) {
+    super(props);
+    this.state={
+      ds: new ListView.DataSource({rowHasChanged: (row1, row2) => row1.CardNa !== row2.CardNa}),
+      dataSource: []
+    };
+    this.list = [];
+  }
+    renderRow(rowData) {
+      return(
+          <TouchableOpacity onPress={() => {this.props.navigation.navigate('Payments')}}>
+            <Text style={styles.card}>{rowData}</Text>
+          </TouchableOpacity>
+      );
+    }
+
   render() {
+    const { params } = this.props.navigation.state;
     return(
     <View style = {styles.container}>
       <Text style={styles.titleText}>Select Your Card</Text>
-        <View style={{flex: 20, flexDirection: 'column'}}>
+        <View style={{flex:1, flexDirection: 'column'}}>
           <View style={{flex: 1, flexDirection: 'row'}}>
             <TouchableOpacity onPress={() => {this.props.navigation.navigate('Payments')}}>
-              <Text style={styles.card}>Amex</Text>
+              <Text style={styles.card}>Amex 0005</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => {this.props.navigation.navigate('Payments')}}>
-               <Text style={styles.card}>Visa</Text>
+               <Text style={styles.card}>Visa 4242</Text>
             </TouchableOpacity>
           </View>
           <View style={{flex: 1, flexDirection: 'row'}}>
             <TouchableOpacity onPress={() => {this.props.navigation.navigate('Payments')}}>
-              <Text style={styles.card}>Discover</Text>
+              <Text style={styles.card}>Discover 1117</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => {this.props.navigation.navigate('Payments')}}>
-              <Text style={styles.card}>{this.state.CardNa}</Text>
+              <Text style={styles.card}>{params.CardNa} {params.CardNo.slice(-4)}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -45,8 +57,6 @@ class StripePayments extends React.Component {
     );
   }
 }
-
-
 
 var styles = StyleSheet.create({
   container: {
@@ -68,8 +78,9 @@ var styles = StyleSheet.create({
     width: 160,
     borderWidth: 2,
     borderColor: 'black',
-    margin: 20,
-    backgroundColor: '#42033D'
+    margin: 15,
+    backgroundColor: '#42033D',
+    borderRadius: 5,
   },
   card2: {
     fontSize: 16,

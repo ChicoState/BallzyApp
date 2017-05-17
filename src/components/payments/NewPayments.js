@@ -9,14 +9,18 @@ import {
 
 
 class StripePayments extends React.Component {
-  state={
-    CardNa: '',
-    CardNo: '',
-    CardMo: '',
-    CardYr: '',
-    CardCvc: ''
-  };
+  constructor(props) {
+    super(props);
+    this.state={
+      CardNa: '',
+      CardNo: '',
+      CardMo: '',
+      CardYr: '',
+      CardCvc: ''
+    };
+  }
   render() {
+    const {navigate} = this.props.navigation;
     return(
     <View style = {styles.container}>
       <Text style={styles.titleText}>New Card</Text>
@@ -29,30 +33,40 @@ class StripePayments extends React.Component {
       <TextInput
 	    style={styles.input}
 	    placeholder='Card Number'
+	    maxLength={16}
 	    onChangeText={(text) =>{
 	    this.setState({CardNo: text})}}
       />
       <TextInput
 	    style={styles.input}
 	    placeholder='Expiration Month'
+	    maxLength={2}
 	    onChangeText={(text) =>{
 	    this.setState({CardMo: text})}}
       />
       <TextInput
 	    style={styles.input}
 	    placeholder='Expiration Year'
+	    maxLength={4}
 	    onChangeText={(text) =>{
 	    this.setState({CardYr: text})}}
       />
       <TextInput
 	    style={styles.input}
 	    placeholder='Card CVC'
+	    maxLength={3}
 	    onChangeText={(text) =>{
 	    this.setState({CardCvc: text})}}
       />
         <TouchableOpacity
           onPress={() => {
-            this.props.navigation.navigate('cardPayments', {cardNa: this.state.CardNa, CardNo: this.state.CardNo, CardMo: this.state.CardMo, CardYr: this.state.CardYr, CardCvc: this.state.CardCvc})
+            navigate('cardPayments', {
+              CardNa: this.state.CardNa,
+              CardNo: this.state.CardNo,
+              CardMo: this.state.CardMo,
+              CardYr: this.state.CardYr,
+              CardCvc: this.state.CardCvc
+            })
           }}
         >
           <Text style={styles.buttonText}>
@@ -88,6 +102,7 @@ var styles = StyleSheet.create({
   },
   buttonText: {
     textAlign: 'center',
+    borderColor: 'black',
     borderColor: 'black',
     borderWidth: 1,
     margin: 20,
